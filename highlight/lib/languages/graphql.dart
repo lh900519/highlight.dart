@@ -6,24 +6,9 @@ import '../src/common_modes.dart';
 final graphql = Mode(refs: {}, aliases: [
   "gql"
 ], keywords: {
-  "keyword": [
-    'query',
-    'mutation',
-    'subscription|10',
-    'type',
-    'interface',
-    'union',
-    'scalar',
-    'fragment|10',
-    'enum',
-    'on',
-    '...',
-  ].join(),
-  "literal": [
-    'true',
-    'false',
-    'null',
-  ].join()
+  "keyword":
+      "query mutation subscription|10 type interface union scalar fragment|10 enum on ...",
+  "literal": "true false null"
 }, contains: [
   HASH_COMMENT_MODE,
   QUOTE_STRING_MODE,

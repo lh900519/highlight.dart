@@ -62,11 +62,7 @@ final apache = Mode(
                 "order deny allow setenv rewriterule rewriteengine rewritecond documentroot sethandler errordocument loadmodule options header listen serverroot servername"
           },
           starts: Mode(end: "\$", relevance: 0, keywords: {
-            "literal": [
-              'on',
-              'off',
-              'all',
-            ].join()
+            "literal": "on off all"
           }, contains: [
             Mode(className: "meta", begin: "\\s\\[", end: "\\]\$"),
             Mode(

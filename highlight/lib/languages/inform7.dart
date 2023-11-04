@@ -8,31 +8,8 @@ final inform7 = Mode(
     aliases: ["i7"],
     case_insensitive: true,
     keywords: {
-      "keyword": [
-        'thing',
-        'room',
-        'person',
-        'man',
-        'woman',
-        'animal',
-        'container',
-        'supporter',
-        'backdrop',
-        'door',
-        'scenery',
-        'open',
-        'closed',
-        'locked',
-        'inside',
-        'gender',
-        'is',
-        'are',
-        'say',
-        'understand',
-        'kind',
-        'of',
-        'rule',
-      ].join()
+      "keyword":
+          "thing room person man woman animal container supporter backdrop door scenery open closed locked inside gender is are say understand kind of rule"
     },
     contains: [
       Mode(

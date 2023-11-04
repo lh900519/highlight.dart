@@ -100,20 +100,7 @@ function transformCharList(str) {
 }
 
 function transformWordList(str) {
-    let newStr = "["
-    str.split(' ').forEach(unit => {
-      if (unit == "'") {
-        unit = "\\'";
-      }
-      if (unit == "\\") {
-        unit = "\\\\";
-      }
-      if (unit == "\n") {
-        unit = "\\n";
-      }
-      newStr += `'${unit}',`;
-    });
-    newStr += "].join()";
+    let newStr = str.split(' ').sort(() => Math.random() - 0.5)
     return newStr;
   }
 
@@ -252,12 +239,12 @@ export function allModes() {
             return newStr
           })
           // 替换 "keyword":\s+"
-          .replace(/("(keyword|literal|built_in|class|type)":\s?)"(.*?)(")/g, function(str, start, key, replace, end) {
-            let newStr = transformWordList(replace);
-            newStr = start + newStr
+        //   .replace(/("(keyword|literal|built_in|class|type)":\s?")(.*?)(")/g, function(str, start, key, replace, end) {
+        //     let newStr = transformWordList(replace);
+        //     newStr = start + newStr +end
 
-            return newStr
-          })
+        //     return newStr
+        //   })
           .replace(/\$/g, "\\$")
       );
 

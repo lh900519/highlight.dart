@@ -6,65 +6,10 @@ import '../src/common_modes.dart';
 final haxe = Mode(refs: {}, aliases: [
   "hx"
 ], keywords: {
-  "keyword": [
-    'break',
-    'case',
-    'cast',
-    'catch',
-    'continue',
-    'default',
-    'do',
-    'dynamic',
-    'else',
-    'enum',
-    'extern',
-    'for',
-    'function',
-    'here',
-    'if',
-    'import',
-    'in',
-    'inline',
-    'never',
-    'new',
-    'override',
-    'package',
-    'private',
-    'get',
-    'set',
-    'public',
-    'return',
-    'static',
-    'super',
-    'switch',
-    'this',
-    'throw',
-    'trace',
-    'try',
-    'typedef',
-    'untyped',
-    'using',
-    'var',
-    'while',
-    'Int',
-    'Float',
-    'String',
-    'Bool',
-    'Dynamic',
-    'Void',
-    'Array',
-    '',
-  ].join(),
-  "built_in": [
-    'trace',
-    'this',
-  ].join(),
-  "literal": [
-    'true',
-    'false',
-    'null',
-    '_',
-  ].join()
+  "keyword":
+      "break case cast catch continue default do dynamic else enum extern for function here if import in inline never new override package private get set public return static super switch this throw trace try typedef untyped using var while Int Float String Bool Dynamic Void Array ",
+  "built_in": "trace this",
+  "literal": "true false null _"
 }, contains: [
   Mode(className: "string", begin: "'", end: "'", contains: [
     BACKSLASH_ESCAPE,
@@ -131,11 +76,7 @@ final haxe = Mode(refs: {}, aliases: [
         TITLE_MODE
       ],
       keywords: {
-        "keyword": [
-          'abstract',
-          'from',
-          'to',
-        ].join()
+        "keyword": "abstract from to"
       }),
   Mode(
       className: "class",

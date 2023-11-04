@@ -822,37 +822,8 @@ final powershell = Mode(
     lexemes: "-?[A-z\\.\\-]+",
     case_insensitive: true,
     keywords: {
-      "keyword": [
-        'if',
-        'else',
-        'foreach',
-        'return',
-        'do',
-        'while',
-        'until',
-        'elseif',
-        'begin',
-        'for',
-        'trap',
-        'data',
-        'dynamicparam',
-        'end',
-        'break',
-        'throw',
-        'param',
-        'continue',
-        'finally',
-        'in',
-        'switch',
-        'exit',
-        'filter',
-        'try',
-        'process',
-        'catch',
-        'hidden',
-        'static',
-        'parameter',
-      ].join()
+      "keyword":
+          "if else foreach return do while until elseif begin for trap data dynamicparam end break throw param continue finally in switch exit filter try process catch hidden static parameter"
     },
     contains: [
       Mode(
