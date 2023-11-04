@@ -5,7 +5,16 @@ import '../src/common_modes.dart';
 
 final dsconfig = Mode(
     refs: {},
-    keywords: "dsconfig",
+    keywords: [
+      'd',
+      's',
+      'c',
+      'o',
+      'n',
+      'f',
+      'i',
+      'g',
+    ].join(),
     contains: [
       Mode(
           className: "keyword",

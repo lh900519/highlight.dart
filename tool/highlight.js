@@ -81,6 +81,24 @@ function generateMode(obj, matchCommonKey = true, commonSet = new Set()) {
   return code;
 }
 
+function transformCharList(str) {
+  let newStr = "["
+  str.split('').forEach(unit => {
+    if (unit == "'") {
+      unit = "\\'";
+    }
+    if (unit == "\\") {
+      unit = "\\\\";
+    }
+    if (unit == "\n") {
+      unit = "\\n";
+    }
+    newStr += `'${unit}',`;
+  });
+  newStr += "].join()";
+  return newStr;
+}
+
 /**
  * highlight/src/common_modes.dart
  */
@@ -202,6 +220,26 @@ export function allModes() {
           5
         )};`
           .replace(/"hljs\.(.*?)"/g, "$1")
+          // 替换 ~contains
+          .replace(/'(~contains.*?)'([:|\)])/g, function(str, replace, end) {
+            let newStr = transformCharList(replace);
+            newStr += end
+            return newStr
+          })
+          // 替换 keywords:\s?"
+          .replace(/(keywords:\s?)"(.*?)(")/g, function(str, start, replace, end) {
+            let newStr = transformCharList(replace);
+            newStr = start + newStr
+
+            return newStr
+          })
+          // 替换 "keyword":\s+"
+          .replace(/("(keyword|literal|built_in|class|type)":\s?)"(.*?)(")/g, function(str, start, key, replace, end) {
+            let newStr = transformCharList(replace);
+            newStr = start + newStr
+
+            return newStr
+          })
           .replace(/\$/g, "\\$")
       );
 

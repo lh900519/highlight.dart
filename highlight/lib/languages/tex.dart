@@ -4,7 +4,19 @@ import '../src/mode.dart';
 import '../src/common_modes.dart';
 
 final tex = Mode(refs: {
-  '~contains~0': Mode(className: "tag", begin: "\\\\", relevance: 0, contains: [
+  [
+    '~',
+    'c',
+    'o',
+    'n',
+    't',
+    'a',
+    'i',
+    'n',
+    's',
+    '~',
+    '0',
+  ].join(): Mode(className: "tag", begin: "\\\\", relevance: 0, contains: [
     Mode(
         className: "name",
         variants: [
@@ -28,10 +40,38 @@ final tex = Mode(refs: {
         ]))
   ]),
 }, contains: [
-  Mode(ref: '~contains~0'),
+  Mode(
+      ref: [
+    '~',
+    'c',
+    'o',
+    'n',
+    't',
+    'a',
+    'i',
+    'n',
+    's',
+    '~',
+    '0',
+  ].join()),
   Mode(
       className: "formula",
-      contains: [Mode(ref: '~contains~0')],
+      contains: [
+        Mode(
+            ref: [
+          '~',
+          'c',
+          'o',
+          'n',
+          't',
+          'a',
+          'i',
+          'n',
+          's',
+          '~',
+          '0',
+        ].join())
+      ],
       relevance: 0,
       variants: [
         Mode(begin: "\\\$\\\$", end: "\\\$\\\$"),

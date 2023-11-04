@@ -30,9 +30,32 @@ final yaml = Mode(
       Mode(className: "meta", begin: "\\*[a-zA-Z_]\\w*\$"),
       Mode(className: "bullet", begin: "\\-(?=[ ]|\$)", relevance: 0),
       HASH_COMMENT_MODE,
-      Mode(
-          beginKeywords: "true false yes no null",
-          keywords: {"literal": "true false yes no null"}),
+      Mode(beginKeywords: "true false yes no null", keywords: {
+        "literal": [
+          't',
+          'r',
+          'u',
+          'e',
+          ' ',
+          'f',
+          'a',
+          'l',
+          's',
+          'e',
+          ' ',
+          'y',
+          'e',
+          's',
+          ' ',
+          'n',
+          'o',
+          ' ',
+          'n',
+          'u',
+          'l',
+          'l',
+        ].join()
+      }),
       Mode(
           className: "number",
           begin:

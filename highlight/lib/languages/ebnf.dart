@@ -5,7 +5,19 @@ import '../src/common_modes.dart';
 
 final ebnf = Mode(
     refs: {
-      '~contains~0':
+      [
+        '~',
+        'c',
+        'o',
+        'n',
+        't',
+        'a',
+        'i',
+        'n',
+        's',
+        '~',
+        '0',
+      ].join():
           Mode(className: "comment", begin: "\\(\\*", end: "\\*\\)", contains: [
         PHRASAL_WORDS_MODE,
         Mode(
@@ -16,12 +28,38 @@ final ebnf = Mode(
     },
     illegal: "\\S",
     contains: [
-      Mode(ref: '~contains~0'),
+      Mode(
+          ref: [
+        '~',
+        'c',
+        'o',
+        'n',
+        't',
+        'a',
+        'i',
+        'n',
+        's',
+        '~',
+        '0',
+      ].join()),
       Mode(
           className: "attribute",
           begin: "^[ ]*[a-zA-Z][a-zA-Z-_]*([\\s-_]+[a-zA-Z][a-zA-Z]*)*"),
       Mode(begin: "=", end: "[.;]", contains: [
-        Mode(ref: '~contains~0'),
+        Mode(
+            ref: [
+          '~',
+          'c',
+          'o',
+          'n',
+          't',
+          'a',
+          'i',
+          'n',
+          's',
+          '~',
+          '0',
+        ].join()),
         Mode(className: "meta", begin: "\\?.*\\?"),
         Mode(className: "string", variants: [
           APOS_STRING_MODE,

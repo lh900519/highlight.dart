@@ -4,8 +4,30 @@ import '../src/mode.dart';
 import '../src/common_modes.dart';
 
 final brainfuck = Mode(refs: {
-  '~contains~3~contains~0':
-      Mode(className: "literal", begin: "[\\+\\-]", relevance: 0),
+  [
+    '~',
+    'c',
+    'o',
+    'n',
+    't',
+    'a',
+    'i',
+    'n',
+    's',
+    '~',
+    '3',
+    '~',
+    'c',
+    'o',
+    'n',
+    't',
+    'a',
+    'i',
+    'n',
+    's',
+    '~',
+    '0',
+  ].join(): Mode(className: "literal", begin: "[\\+\\-]", relevance: 0),
 }, aliases: [
   "bf"
 ], contains: [
@@ -24,8 +46,56 @@ final brainfuck = Mode(refs: {
       relevance: 0),
   Mode(className: "title", begin: "[\\[\\]]", relevance: 0),
   Mode(className: "string", begin: "[\\.,]", relevance: 0),
+  Mode(begin: "(?:\\+\\+|\\-\\-)", contains: [
+    Mode(
+        ref: [
+      '~',
+      'c',
+      'o',
+      'n',
+      't',
+      'a',
+      'i',
+      'n',
+      's',
+      '~',
+      '3',
+      '~',
+      'c',
+      'o',
+      'n',
+      't',
+      'a',
+      'i',
+      'n',
+      's',
+      '~',
+      '0',
+    ].join())
+  ]),
   Mode(
-      begin: "(?:\\+\\+|\\-\\-)",
-      contains: [Mode(ref: '~contains~3~contains~0')]),
-  Mode(ref: '~contains~3~contains~0')
+      ref: [
+    '~',
+    'c',
+    'o',
+    'n',
+    't',
+    'a',
+    'i',
+    'n',
+    's',
+    '~',
+    '3',
+    '~',
+    'c',
+    'o',
+    'n',
+    't',
+    'a',
+    'i',
+    'n',
+    's',
+    '~',
+    '0',
+  ].join())
 ]);

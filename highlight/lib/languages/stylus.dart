@@ -5,13 +5,53 @@ import '../src/common_modes.dart';
 
 final stylus = Mode(
     refs: {
-      '~contains~4':
+      [
+        '~',
+        'c',
+        'o',
+        'n',
+        't',
+        'a',
+        'i',
+        'n',
+        's',
+        '~',
+        '4',
+      ].join():
           Mode(className: "number", begin: "#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})"),
-      '~contains~10': Mode(className: "variable", begin: "\\\$[a-zA-Z]\\w*"),
+      [
+        '~',
+        'c',
+        'o',
+        'n',
+        't',
+        'a',
+        'i',
+        'n',
+        's',
+        '~',
+        '1',
+        '0',
+      ].join(): Mode(className: "variable", begin: "\\\$[a-zA-Z]\\w*"),
     },
     aliases: ["styl"],
     case_insensitive: false,
-    keywords: "if else for in",
+    keywords: [
+      'i',
+      'f',
+      ' ',
+      'e',
+      'l',
+      's',
+      'e',
+      ' ',
+      'f',
+      'o',
+      'r',
+      ' ',
+      'i',
+      'n',
+    ].join(),
     illegal:
         "(\\?|(\\bReturn\\b)|(\\bEnd\\b)|(\\bend\\b)|(\\bdef\\b)|;|#\\s|\\*\\s|===\\s|\\||%)",
     contains: [
@@ -19,7 +59,20 @@ final stylus = Mode(
       APOS_STRING_MODE,
       C_LINE_COMMENT_MODE,
       C_BLOCK_COMMENT_MODE,
-      Mode(ref: '~contains~4'),
+      Mode(
+          ref: [
+        '~',
+        'c',
+        'o',
+        'n',
+        't',
+        'a',
+        'i',
+        'n',
+        's',
+        '~',
+        '4',
+      ].join()),
       Mode(
           begin: "\\.[a-zA-Z][a-zA-Z0-9_-]*(?=[\\.\\s\\n\\[\\:,])",
           className: "selector-class"),
@@ -36,7 +89,21 @@ final stylus = Mode(
       Mode(
           begin:
               "@(charset|css|debug|extend|font-face|for|import|include|media|mixin|page|warn|while)\\b"),
-      Mode(ref: '~contains~10'),
+      Mode(
+          ref: [
+        '~',
+        'c',
+        'o',
+        'n',
+        't',
+        'a',
+        'i',
+        'n',
+        's',
+        '~',
+        '1',
+        '0',
+      ].join()),
       CSS_NUMBER_MODE,
       NUMBER_MODE,
       Mode(
@@ -47,8 +114,35 @@ final stylus = Mode(
           contains: [
             Mode(className: "title", begin: "\\b[a-zA-Z][a-zA-Z0-9_-]*"),
             Mode(className: "params", begin: "\\(", end: "\\)", contains: [
-              Mode(ref: '~contains~4'),
-              Mode(ref: '~contains~10'),
+              Mode(
+                  ref: [
+                '~',
+                'c',
+                'o',
+                'n',
+                't',
+                'a',
+                'i',
+                'n',
+                's',
+                '~',
+                '4',
+              ].join()),
+              Mode(
+                  ref: [
+                '~',
+                'c',
+                'o',
+                'n',
+                't',
+                'a',
+                'i',
+                'n',
+                's',
+                '~',
+                '1',
+                '0',
+              ].join()),
               APOS_STRING_MODE,
               CSS_NUMBER_MODE,
               NUMBER_MODE,
@@ -62,8 +156,35 @@ final stylus = Mode(
           starts: Mode(
               end: ";|\$",
               contains: [
-                Mode(ref: '~contains~4'),
-                Mode(ref: '~contains~10'),
+                Mode(
+                    ref: [
+                  '~',
+                  'c',
+                  'o',
+                  'n',
+                  't',
+                  'a',
+                  'i',
+                  'n',
+                  's',
+                  '~',
+                  '4',
+                ].join()),
+                Mode(
+                    ref: [
+                  '~',
+                  'c',
+                  'o',
+                  'n',
+                  't',
+                  'a',
+                  'i',
+                  'n',
+                  's',
+                  '~',
+                  '1',
+                  '0',
+                ].join()),
                 APOS_STRING_MODE,
                 QUOTE_STRING_MODE,
                 CSS_NUMBER_MODE,

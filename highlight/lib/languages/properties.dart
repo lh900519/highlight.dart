@@ -5,7 +5,26 @@ import '../src/common_modes.dart';
 
 final properties = Mode(
     refs: {
-      '~contains~1~starts': Mode(
+      [
+        '~',
+        'c',
+        'o',
+        'n',
+        't',
+        'a',
+        'i',
+        'n',
+        's',
+        '~',
+        '1',
+        '~',
+        's',
+        't',
+        'a',
+        'r',
+        't',
+        's',
+      ].join(): Mode(
           end: "([ \\t\\f]*[:=][ \\t\\f]*|[ \\t\\f]+)",
           relevance: 0,
           starts: Mode(
@@ -35,7 +54,27 @@ final properties = Mode(
                 endsParent: true,
                 relevance: 0)
           ],
-          starts: Mode(ref: '~contains~1~starts')),
+          starts: Mode(
+              ref: [
+            '~',
+            'c',
+            'o',
+            'n',
+            't',
+            'a',
+            'i',
+            'n',
+            's',
+            '~',
+            '1',
+            '~',
+            's',
+            't',
+            'a',
+            'r',
+            't',
+            's',
+          ].join())),
       Mode(
           begin:
               "([^\\\\:= \\t\\f\\n]|\\\\.)+([ \\t\\f]*[:=][ \\t\\f]*|[ \\t\\f]+)",
@@ -48,7 +87,27 @@ final properties = Mode(
                 endsParent: true,
                 relevance: 0)
           ],
-          starts: Mode(ref: '~contains~1~starts')),
+          starts: Mode(
+              ref: [
+            '~',
+            'c',
+            'o',
+            'n',
+            't',
+            'a',
+            'i',
+            'n',
+            's',
+            '~',
+            '1',
+            '~',
+            's',
+            't',
+            'a',
+            'r',
+            't',
+            's',
+          ].join())),
       Mode(
           className: "attr",
           relevance: 0,
