@@ -4,9 +4,31 @@ import '../src/mode.dart';
 import '../src/common_modes.dart';
 
 final flix = Mode(refs: {}, keywords: {
-  "literal": "true false",
-  "keyword":
-      "case class def else enum if impl import in lat rel index let match namespace switch type yield with"
+  "literal": [
+    'true',
+    'false',
+  ].join(),
+  "keyword": [
+    'case',
+    'class',
+    'def',
+    'else',
+    'enum',
+    'if',
+    'impl',
+    'import',
+    'in',
+    'lat',
+    'rel',
+    'index',
+    'let',
+    'match',
+    'namespace',
+    'switch',
+    'type',
+    'yield',
+    'with',
+  ].join()
 }, contains: [
   C_LINE_COMMENT_MODE,
   C_BLOCK_COMMENT_MODE,

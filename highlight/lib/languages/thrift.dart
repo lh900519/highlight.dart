@@ -4,10 +4,36 @@ import '../src/mode.dart';
 import '../src/common_modes.dart';
 
 final thrift = Mode(refs: {}, keywords: {
-  "keyword":
-      "namespace const typedef struct enum service exception void oneway set list map required optional",
-  "built_in": "bool byte i16 i32 i64 double string binary",
-  "literal": "true false"
+  "keyword": [
+    'namespace',
+    'const',
+    'typedef',
+    'struct',
+    'enum',
+    'service',
+    'exception',
+    'void',
+    'oneway',
+    'set',
+    'list',
+    'map',
+    'required',
+    'optional',
+  ].join(),
+  "built_in": [
+    'bool',
+    'byte',
+    'i16',
+    'i32',
+    'i64',
+    'double',
+    'string',
+    'binary',
+  ].join(),
+  "literal": [
+    'true',
+    'false',
+  ].join()
 }, contains: [
   QUOTE_STRING_MODE,
   NUMBER_MODE,

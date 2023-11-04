@@ -8,7 +8,13 @@ final step21 = Mode(
     aliases: ["p21", "step", "stp"],
     case_insensitive: true,
     lexemes: "[A-Z_][A-Z0-9_.]*",
-    keywords: {"keyword": "HEADER ENDSEC DATA"},
+    keywords: {
+      "keyword": [
+        'HEADER',
+        'ENDSEC',
+        'DATA',
+      ].join()
+    },
     contains: [
       Mode(className: "meta", begin: "ISO-10303-21;", relevance: 10),
       Mode(className: "meta", begin: "END-ISO-10303-21;", relevance: 10),

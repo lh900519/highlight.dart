@@ -2093,9 +2093,39 @@ final erlang = Mode(
         '2',
       ].join():
           Mode(beginKeywords: "fun receive if try case", end: "end", keywords: {
-        "keyword":
-            "after and andalso|10 band begin bnot bor bsl bzr bxor case catch cond div end fun if let not of orelse|10 query receive rem try when xor",
-        "literal": "false true"
+        "keyword": [
+          'after',
+          'and',
+          'andalso|10',
+          'band',
+          'begin',
+          'bnot',
+          'bor',
+          'bsl',
+          'bzr',
+          'bxor',
+          'case',
+          'catch',
+          'cond',
+          'div',
+          'end',
+          'fun',
+          'if',
+          'let',
+          'not',
+          'of',
+          'orelse|10',
+          'query',
+          'receive',
+          'rem',
+          'try',
+          'when',
+          'xor',
+        ].join(),
+        "literal": [
+          'false',
+          'true',
+        ].join()
       }, contains: [
         Mode(
             ref: [
@@ -3276,9 +3306,39 @@ final erlang = Mode(
     },
     aliases: ["erl"],
     keywords: {
-      "keyword":
-          "after and andalso|10 band begin bnot bor bsl bzr bxor case catch cond div end fun if let not of orelse|10 query receive rem try when xor",
-      "literal": "false true"
+      "keyword": [
+        'after',
+        'and',
+        'andalso|10',
+        'band',
+        'begin',
+        'bnot',
+        'bor',
+        'bsl',
+        'bzr',
+        'bxor',
+        'case',
+        'catch',
+        'cond',
+        'div',
+        'end',
+        'fun',
+        'if',
+        'let',
+        'not',
+        'of',
+        'orelse|10',
+        'query',
+        'receive',
+        'rem',
+        'try',
+        'when',
+        'xor',
+      ].join(),
+      "literal": [
+        'false',
+        'true',
+      ].join()
     },
     illegal: "(</|\\*=|\\+=|-=|/\\*|\\*/|\\(\\*|\\*\\))",
     contains: [
@@ -3318,9 +3378,39 @@ final erlang = Mode(
                 className: "title", begin: "[a-z'][a-zA-Z0-9_']*", relevance: 0)
           ],
           starts: Mode(end: ";|\\.", keywords: {
-            "keyword":
-                "after and andalso|10 band begin bnot bor bsl bzr bxor case catch cond div end fun if let not of orelse|10 query receive rem try when xor",
-            "literal": "false true"
+            "keyword": [
+              'after',
+              'and',
+              'andalso|10',
+              'band',
+              'begin',
+              'bnot',
+              'bor',
+              'bsl',
+              'bzr',
+              'bxor',
+              'case',
+              'catch',
+              'cond',
+              'div',
+              'end',
+              'fun',
+              'if',
+              'let',
+              'not',
+              'of',
+              'orelse|10',
+              'query',
+              'receive',
+              'rem',
+              'try',
+              'when',
+              'xor',
+            ].join(),
+            "literal": [
+              'false',
+              'true',
+            ].join()
           }, contains: [
             Mode(
                 ref: [

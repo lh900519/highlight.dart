@@ -261,9 +261,37 @@ final cal = Mode(
     },
     case_insensitive: true,
     keywords: {
-      "keyword":
-          "div mod in and or not xor asserterror begin case do downto else end exit for if of repeat then to until while with var",
-      "literal": "false true"
+      "keyword": [
+        'div',
+        'mod',
+        'in',
+        'and',
+        'or',
+        'not',
+        'xor',
+        'asserterror',
+        'begin',
+        'case',
+        'do',
+        'downto',
+        'else',
+        'end',
+        'exit',
+        'for',
+        'if',
+        'of',
+        'repeat',
+        'then',
+        'to',
+        'until',
+        'while',
+        'with',
+        'var',
+      ].join(),
+      "literal": [
+        'false',
+        'true',
+      ].join()
     },
     illegal: "\\/\\*",
     contains: [

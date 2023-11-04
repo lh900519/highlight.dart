@@ -7,8 +7,46 @@ final dns = Mode(refs: {}, aliases: [
   "bind",
   "zone"
 ], keywords: {
-  "keyword":
-      "IN A AAAA AFSDB APL CAA CDNSKEY CDS CERT CNAME DHCID DLV DNAME DNSKEY DS HIP IPSECKEY KEY KX LOC MX NAPTR NS NSEC NSEC3 NSEC3PARAM PTR RRSIG RP SIG SOA SRV SSHFP TA TKEY TLSA TSIG TXT"
+  "keyword": [
+    'IN',
+    'A',
+    'AAAA',
+    'AFSDB',
+    'APL',
+    'CAA',
+    'CDNSKEY',
+    'CDS',
+    'CERT',
+    'CNAME',
+    'DHCID',
+    'DLV',
+    'DNAME',
+    'DNSKEY',
+    'DS',
+    'HIP',
+    'IPSECKEY',
+    'KEY',
+    'KX',
+    'LOC',
+    'MX',
+    'NAPTR',
+    'NS',
+    'NSEC',
+    'NSEC3',
+    'NSEC3PARAM',
+    'PTR',
+    'RRSIG',
+    'RP',
+    'SIG',
+    'SOA',
+    'SRV',
+    'SSHFP',
+    'TA',
+    'TKEY',
+    'TLSA',
+    'TSIG',
+    'TXT',
+  ].join()
 }, contains: [
   Mode(
       className: "comment",

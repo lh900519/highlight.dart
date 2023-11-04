@@ -57,10 +57,37 @@ final nix = Mode(refs: {
     '3',
   ].join(): Mode(className: "string", contains: [
     Mode(className: "subst", begin: "\\\$\\{", end: "}", keywords: {
-      "keyword": "rec with let in inherit assert if else then",
-      "literal": "true false or and null",
-      "built_in":
-          "import abort baseNameOf dirOf isNull builtins map removeAttrs throw toString derivation"
+      "keyword": [
+        'rec',
+        'with',
+        'let',
+        'in',
+        'inherit',
+        'assert',
+        'if',
+        'else',
+        'then',
+      ].join(),
+      "literal": [
+        'true',
+        'false',
+        'or',
+        'and',
+        'null',
+      ].join(),
+      "built_in": [
+        'import',
+        'abort',
+        'baseNameOf',
+        'dirOf',
+        'isNull',
+        'builtins',
+        'map',
+        'removeAttrs',
+        'throw',
+        'toString',
+        'derivation',
+      ].join()
     }, contains: [
       NUMBER_MODE,
       HASH_COMMENT_MODE,
@@ -123,10 +150,37 @@ final nix = Mode(refs: {
 }, aliases: [
   "nixos"
 ], keywords: {
-  "keyword": "rec with let in inherit assert if else then",
-  "literal": "true false or and null",
-  "built_in":
-      "import abort baseNameOf dirOf isNull builtins map removeAttrs throw toString derivation"
+  "keyword": [
+    'rec',
+    'with',
+    'let',
+    'in',
+    'inherit',
+    'assert',
+    'if',
+    'else',
+    'then',
+  ].join(),
+  "literal": [
+    'true',
+    'false',
+    'or',
+    'and',
+    'null',
+  ].join(),
+  "built_in": [
+    'import',
+    'abort',
+    'baseNameOf',
+    'dirOf',
+    'isNull',
+    'builtins',
+    'map',
+    'removeAttrs',
+    'throw',
+    'toString',
+    'derivation',
+  ].join()
 }, contains: [
   NUMBER_MODE,
   HASH_COMMENT_MODE,

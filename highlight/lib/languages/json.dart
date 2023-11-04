@@ -98,7 +98,11 @@ final json = Mode(refs: {
           C_LINE_COMMENT_MODE,
           C_BLOCK_COMMENT_MODE
         ], keywords: {
-          "literal": "true false null"
+          "literal": [
+            'true',
+            'false',
+            'null',
+          ].join()
         })
       ],
       illegal: "\\S"),
@@ -184,7 +188,13 @@ final json = Mode(refs: {
               C_LINE_COMMENT_MODE,
               C_BLOCK_COMMENT_MODE
             ],
-            keywords: {"literal": "true false null"},
+            keywords: {
+              "literal": [
+                'true',
+                'false',
+                'null',
+              ].join()
+            },
             begin: ":"),
         C_LINE_COMMENT_MODE,
         C_BLOCK_COMMENT_MODE
@@ -246,5 +256,9 @@ final json = Mode(refs: {
   C_LINE_COMMENT_MODE,
   C_BLOCK_COMMENT_MODE
 ], keywords: {
-  "literal": "true false null"
+  "literal": [
+    'true',
+    'false',
+    'null',
+  ].join()
 }, illegal: "\\S");

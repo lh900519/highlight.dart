@@ -6,11 +6,49 @@ import '../src/common_modes.dart';
 final capnproto = Mode(refs: {}, aliases: [
   "capnp"
 ], keywords: {
-  "keyword":
-      "struct enum interface union group import using const annotation extends in of on as with from fixed",
-  "built_in":
-      "Void Bool Int8 Int16 Int32 Int64 UInt8 UInt16 UInt32 UInt64 Float32 Float64 Text Data AnyPointer AnyStruct Capability List",
-  "literal": "true false"
+  "keyword": [
+    'struct',
+    'enum',
+    'interface',
+    'union',
+    'group',
+    'import',
+    'using',
+    'const',
+    'annotation',
+    'extends',
+    'in',
+    'of',
+    'on',
+    'as',
+    'with',
+    'from',
+    'fixed',
+  ].join(),
+  "built_in": [
+    'Void',
+    'Bool',
+    'Int8',
+    'Int16',
+    'Int32',
+    'Int64',
+    'UInt8',
+    'UInt16',
+    'UInt32',
+    'UInt64',
+    'Float32',
+    'Float64',
+    'Text',
+    'Data',
+    'AnyPointer',
+    'AnyStruct',
+    'Capability',
+    'List',
+  ].join(),
+  "literal": [
+    'true',
+    'false',
+  ].join()
 }, contains: [
   QUOTE_STRING_MODE,
   NUMBER_MODE,

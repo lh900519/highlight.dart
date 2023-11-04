@@ -4,8 +4,24 @@ import '../src/mode.dart';
 import '../src/common_modes.dart';
 
 final awk = Mode(refs: {}, keywords: {
-  "keyword":
-      "BEGIN END if else while do for in break continue delete next nextfile function func exit|10"
+  "keyword": [
+    'BEGIN',
+    'END',
+    'if',
+    'else',
+    'while',
+    'do',
+    'for',
+    'in',
+    'break',
+    'continue',
+    'delete',
+    'next',
+    'nextfile',
+    'function',
+    'func',
+    'exit|10',
+  ].join()
 }, contains: [
   Mode(className: "variable", variants: [
     Mode(begin: "\\\$[\\w\\d#@][\\w\\d_]*"),

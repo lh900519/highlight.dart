@@ -28,9 +28,37 @@ final htmlbars = Mode(
                       "action collection component concat debugger each each-in else get hash if input link-to loc log mut outlet partial query-params render textarea unbound unless with yield view"
                 },
                 starts: Mode(endsWithParent: true, relevance: 0, keywords: {
-                  "keyword": "as",
-                  "built_in":
-                      "action collection component concat debugger each each-in else get hash if input link-to loc log mut outlet partial query-params render textarea unbound unless with yield view"
+                  "keyword": [
+                    'as',
+                  ].join(),
+                  "built_in": [
+                    'action',
+                    'collection',
+                    'component',
+                    'concat',
+                    'debugger',
+                    'each',
+                    'each-in',
+                    'else',
+                    'get',
+                    'hash',
+                    'if',
+                    'input',
+                    'link-to',
+                    'loc',
+                    'log',
+                    'mut',
+                    'outlet',
+                    'partial',
+                    'query-params',
+                    'render',
+                    'textarea',
+                    'unbound',
+                    'unless',
+                    'with',
+                    'yield',
+                    'view',
+                  ].join()
                 }, contains: [
                   QUOTE_STRING_MODE,
                   Mode(
@@ -49,9 +77,37 @@ final htmlbars = Mode(
           begin: "\\{\\{[a-zA-Z][a-zA-Z\\-]+",
           end: "\\}\\}",
           keywords: {
-            "keyword": "as",
-            "built_in":
-                "action collection component concat debugger each each-in else get hash if input link-to loc log mut outlet partial query-params render textarea unbound unless with yield view"
+            "keyword": [
+              'as',
+            ].join(),
+            "built_in": [
+              'action',
+              'collection',
+              'component',
+              'concat',
+              'debugger',
+              'each',
+              'each-in',
+              'else',
+              'get',
+              'hash',
+              'if',
+              'input',
+              'link-to',
+              'loc',
+              'log',
+              'mut',
+              'outlet',
+              'partial',
+              'query-params',
+              'render',
+              'textarea',
+              'unbound',
+              'unless',
+              'with',
+              'yield',
+              'view',
+            ].join()
           },
           contains: [
             QUOTE_STRING_MODE

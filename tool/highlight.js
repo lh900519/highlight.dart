@@ -251,13 +251,13 @@ export function allModes() {
 
             return newStr
           })
-        //   // 替换 "keyword":\s+"
-        //   .replace(/("(keyword|literal|built_in|class|type)":\s?)"(.*?)(")/g, function(str, start, key, replace, end) {
-        //     let newStr = transformWordList(replace);
-        //     newStr = start + newStr
+          // 替换 "keyword":\s+"
+          .replace(/("(keyword|literal|built_in|class|type)":\s?)"(.*?)(")/g, function(str, start, key, replace, end) {
+            let newStr = transformWordList(replace);
+            newStr = start + newStr
 
-        //     return newStr
-        //   })
+            return newStr
+          })
           .replace(/\$/g, "\\$")
       );
 

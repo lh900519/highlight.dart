@@ -22,10 +22,43 @@ final autohotkey = Mode(
     case_insensitive: true,
     aliases: ["ahk"],
     keywords: {
-      "keyword":
-          "Break Continue Critical Exit ExitApp Gosub Goto New OnExit Pause return SetBatchLines SetTimer Suspend Thread Throw Until ahk_id ahk_class ahk_pid ahk_exe ahk_group",
-      "literal": "true false NOT AND OR",
-      "built_in": "ComSpec Clipboard ClipboardAll ErrorLevel"
+      "keyword": [
+        'Break',
+        'Continue',
+        'Critical',
+        'Exit',
+        'ExitApp',
+        'Gosub',
+        'Goto',
+        'New',
+        'OnExit',
+        'Pause',
+        'return',
+        'SetBatchLines',
+        'SetTimer',
+        'Suspend',
+        'Thread',
+        'Throw',
+        'Until',
+        'ahk_id',
+        'ahk_class',
+        'ahk_pid',
+        'ahk_exe',
+        'ahk_group',
+      ].join(),
+      "literal": [
+        'true',
+        'false',
+        'NOT',
+        'AND',
+        'OR',
+      ].join(),
+      "built_in": [
+        'ComSpec',
+        'Clipboard',
+        'ClipboardAll',
+        'ErrorLevel',
+      ].join()
     },
     contains: [
       Mode(
