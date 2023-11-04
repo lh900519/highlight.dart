@@ -35,10 +35,10 @@ final coffeescript = Mode(
           contains: [
             Mode(begin: "\\(", end: "\\)", keywords: {
               "keyword":
-                  "in if for while finally new do return else break catch instanceof throw try this switch continue typeof delete debugger super yield import export from as default await then unless until loop of by when and or is isnt not",
-              "literal": "true false null undefined yes no on off",
+                  "when else finally try or throw isnt by return as this export of default not delete while typeof continue until switch unless new and super yield for if then is break instanceof do catch in await from import loop debugger",
+              "literal": "undefined no null off true yes false on",
               "built_in":
-                  "npm require console print module global window document"
+                  "window global console require document npm print module"
             }, contains: [
               Mode(self: true),
               BINARY_NUMBER_MODE,
@@ -463,9 +463,9 @@ final coffeescript = Mode(
         '1',
       ].join(): Mode(className: "subst", begin: "#\\{", end: "}", keywords: {
         "keyword":
-            "in if for while finally new do return else break catch instanceof throw try this switch continue typeof delete debugger super yield import export from as default await then unless until loop of by when and or is isnt not",
-        "literal": "true false null undefined yes no on off",
-        "built_in": "npm require console print module global window document"
+            "catch while in or and until try not if import new this unless else yield typeof export break from continue instanceof delete for return switch then by finally super of throw loop is debugger await do as when default isnt",
+        "literal": "on off no yes undefined null false true",
+        "built_in": "console require print global module window npm document"
       }, contains: [
         BINARY_NUMBER_MODE,
         Mode(
@@ -754,9 +754,9 @@ final coffeescript = Mode(
     aliases: ["coffee", "cson", "iced"],
     keywords: {
       "keyword":
-          "in if for while finally new do return else break catch instanceof throw try this switch continue typeof delete debugger super yield import export from as default await then unless until loop of by when and or is isnt not",
-      "literal": "true false null undefined yes no on off",
-      "built_in": "npm require console print module global window document"
+          "default this of or return in super from not isnt new try and debugger if catch yield typeof for await import export else continue finally while when switch until delete throw by as loop instanceof break unless do is then",
+      "literal": "false true no yes off null undefined on",
+      "built_in": "global print document npm window require console module"
     },
     illegal: "\\/\\*",
     contains: [

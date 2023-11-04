@@ -105,11 +105,11 @@ final lua = Mode(
     },
     lexemes: "[a-zA-Z_]\\w*",
     keywords: {
-      "literal": "true false nil",
+      "literal": "false true nil",
       "keyword":
-          "and break do else elseif end for goto if in local not or repeat return then until while",
+          "end and for until then local else while repeat return not or goto in break elseif do if",
       "built_in":
-          "_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len __gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstringmodule next pairs pcall print rawequal rawget rawset require select setfenvsetmetatable tonumber tostring type unpack xpcall arg selfcoroutine resume yield status wrap create running debug getupvalue debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv io lines write close flush open output type read stderr stdin input stdout popen tmpfile math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower table setn insert getn foreachi maxn foreach concat sort remove"
+          "assert sinh foreachi path char stdout rename type __mode collectgarbage _G getenv gfind log tmpname match __sub dump __mul loadfile debug randomseed __tostring atan2 sethook acos sort read getmetatable popen sqrt tostring resume print atan io setfenvsetmetatable upper getfenv output asin cos pi loaded exit rad pairs xpcall require unpack rawget getupvalue stderr min gmatch deg os log10 lower __concat len ipairs debug setlocale loadlib sin lines __mod table setupvalue execute __len __lt gethook clock rawequal type mod setlocal frexp remove maxn pcall loadstringmodule rawset max __pow tonumber stdin foreach flush ceil __le __index __gc cpath __newindex pow modf find seeall loaders arg tan next error __add input huge difftime __unm getlocal setn cosh date close _ENV dofile wrap abs math gsub yield __div status tmpfile exp load __eq ldexp tanh _VERSION string rep __metatable random package __call format sub getfenv setfenv floor getmetatable setmetatable open getn getinfo write time byte selfcoroutine preload create insert traceback getregistry config running remove select reverse fmod concat"
     },
     contains: [
       Mode(

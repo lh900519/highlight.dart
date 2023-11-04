@@ -186,7 +186,7 @@ final makefile = Mode(
           end: "\\)",
           keywords: {
             "built_in":
-                "subst patsubst strip findstring filter filter-out sort word wordlist firstword lastword dir notdir suffix basename addsuffix addprefix join wildcard realpath abspath error warning shell origin flavor foreach if or and call eval file value"
+                "warning abspath shell findstring eval addsuffix foreach word wordlist realpath strip origin patsubst suffix error addprefix basename and value join filter notdir call wildcard lastword dir firstword flavor sort subst filter-out or if file"
           },
           contains: [
             Mode(

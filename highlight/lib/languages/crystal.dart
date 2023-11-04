@@ -2893,8 +2893,8 @@ final crystal = Mode(
         '1',
       ].join(): Mode(className: "subst", begin: "#{", end: "}", keywords: {
         "keyword":
-            "abstract alias annotation as as? asm begin break case class def do else elsif end ensure enum extend for fun if include instance_sizeof is_a? lib macro module next nil? of out pointerof private protected rescue responds_to? return require select self sizeof struct super then type typeof union uninitialized unless until verbatim when while with yield __DIR__ __END_LINE__ __FILE__ __LINE__",
-        "literal": "false nil true"
+            "nil? for annotation ensure sizeof typeof __DIR__ pointerof fun end __FILE__ protected break then is_a? case yield private rescue struct def abstract __LINE__ out union verbatim until instance_sizeof self uninitialized else as? macro extend lib return unless module elsif alias begin if next select __END_LINE__ of do responds_to? enum when while require with include type as class asm super",
+        "literal": "true nil false"
       }, contains: [
         Mode(
             ref: [
@@ -3791,8 +3791,8 @@ final crystal = Mode(
         Mode(begin: "\\{%", end: "%\\}")
       ], keywords: {
         "keyword":
-            "abstract alias annotation as as? asm begin break case class def do else elsif end ensure enum extend for fun if include instance_sizeof is_a? lib macro module next nil? of out pointerof private protected rescue responds_to? return require select self sizeof struct super then type typeof union uninitialized unless until verbatim when while with yield __DIR__ __END_LINE__ __FILE__ __LINE__",
-        "literal": "false nil true"
+            "responds_to? __END_LINE__ alias elsif module instance_sizeof type sizeof yield if when of as do private include return begin end __DIR__ ensure nil? next then rescue fun lib union class break __LINE__ uninitialized is_a? abstract case pointerof protected annotation self while unless struct enum super as? verbatim typeof for asm def __FILE__ out select extend else until macro require with",
+        "literal": "nil false true"
       }, contains: [
         Mode(
             ref: [
@@ -4395,8 +4395,8 @@ final crystal = Mode(
     lexemes: "[a-zA-Z_]\\w*[!?=]?",
     keywords: {
       "keyword":
-          "abstract alias annotation as as? asm begin break case class def do else elsif end ensure enum extend for fun if include instance_sizeof is_a? lib macro module next nil? of out pointerof private protected rescue responds_to? return require select self sizeof struct super then type typeof union uninitialized unless until verbatim when while with yield __DIR__ __END_LINE__ __FILE__ __LINE__",
-      "literal": "false nil true"
+          "case macro when super begin lib end extend alias while then __DIR__ __END_LINE__ instance_sizeof else __LINE__ protected class include ensure require def do __FILE__ as break typeof enum pointerof select with private fun union elsif of asm unless type struct uninitialized next self as? return abstract is_a? nil? until annotation verbatim for if yield module out sizeof rescue responds_to?",
+      "literal": "true nil false"
     },
     contains: [
       Mode(

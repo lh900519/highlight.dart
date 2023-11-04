@@ -244,10 +244,10 @@ final javascript = Mode(refs: {
     '1',
   ].join(): Mode(className: "subst", begin: "\\\$\\{", end: "\\}", keywords: {
     "keyword":
-        "in of if for while finally var new function do return void else break catch instanceof with throw case default try this switch continue typeof delete let yield const export super debugger as async await static import from as",
-    "literal": "true false null undefined NaN Infinity",
+        "if break with typeof try else new default const this function for continue delete catch do from var export of throw yield finally void switch return case await import instanceof debugger static let async as in as while super",
+    "literal": "true NaN Infinity false null undefined",
     "built_in":
-        "eval isFinite isNaN parseFloat parseInt decodeURI decodeURIComponent encodeURI encodeURIComponent escape unescape Object Function Boolean Error EvalError InternalError RangeError ReferenceError StopIteration SyntaxError TypeError URIError Number Math Date String RegExp Array Float32Array Float64Array Int16Array Int32Array Int8Array Uint16Array Uint32Array Uint8Array Uint8ClampedArray ArrayBuffer DataView JSON Intl arguments require module console window document Symbol Set Map WeakSet WeakMap Proxy Reflect Promise"
+        "console parseInt URIError Array Uint8ClampedArray isFinite eval Math StopIteration String Intl ArrayBuffer WeakSet SyntaxError Object RegExp Proxy Date DataView parseFloat ReferenceError encodeURI Float32Array Number Promise Set Float64Array Int16Array isNaN unescape Uint16Array JSON Boolean Uint8Array arguments TypeError decodeURIComponent InternalError document Uint32Array window Reflect Map Function RangeError WeakMap Symbol escape encodeURIComponent Int32Array Int8Array Error module EvalError decodeURI require"
   }, contains: [
     APOS_STRING_MODE,
     QUOTE_STRING_MODE,
@@ -455,10 +455,10 @@ final javascript = Mode(refs: {
   "cjs"
 ], keywords: {
   "keyword":
-      "in of if for while finally var new function do return void else break catch instanceof with throw case default try this switch continue typeof delete let yield const export super debugger as async await static import from as",
-  "literal": "true false null undefined NaN Infinity",
+      "else if try while switch with default debugger void continue instanceof new let for export as super delete import var finally yield as async return typeof throw function static break await catch of from do this in const case",
+  "literal": "true Infinity null undefined NaN false",
   "built_in":
-      "eval isFinite isNaN parseFloat parseInt decodeURI decodeURIComponent encodeURI encodeURIComponent escape unescape Object Function Boolean Error EvalError InternalError RangeError ReferenceError StopIteration SyntaxError TypeError URIError Number Math Date String RegExp Array Float32Array Float64Array Int16Array Int32Array Int8Array Uint16Array Uint32Array Uint8Array Uint8ClampedArray ArrayBuffer DataView JSON Intl arguments require module console window document Symbol Set Map WeakSet WeakMap Proxy Reflect Promise"
+      "DataView EvalError encodeURI RangeError ArrayBuffer parseFloat decodeURI Int8Array Function encodeURIComponent Uint8Array Int32Array eval Date RegExp SyntaxError parseInt isNaN Set decodeURIComponent module Float64Array Math StopIteration TypeError String URIError WeakMap Float32Array document arguments Boolean Proxy ReferenceError InternalError Array Uint32Array Object Reflect Uint16Array escape Uint8ClampedArray console Symbol Map WeakSet require Intl Int16Array Promise JSON Number unescape window Error isFinite"
 }, contains: [
   Mode(
       className: "meta",
@@ -687,10 +687,10 @@ final javascript = Mode(refs: {
                     excludeEnd: true,
                     keywords: {
                       "keyword":
-                          "in of if for while finally var new function do return void else break catch instanceof with throw case default try this switch continue typeof delete let yield const export super debugger as async await static import from as",
-                      "literal": "true false null undefined NaN Infinity",
+                          "export var of continue import await yield in return function void finally throw case break debugger from try default as const if as while let static typeof switch else super new instanceof async with for do this catch delete",
+                      "literal": "true null false Infinity undefined NaN",
                       "built_in":
-                          "eval isFinite isNaN parseFloat parseInt decodeURI decodeURIComponent encodeURI encodeURIComponent escape unescape Object Function Boolean Error EvalError InternalError RangeError ReferenceError StopIteration SyntaxError TypeError URIError Number Math Date String RegExp Array Float32Array Float64Array Int16Array Int32Array Int8Array Uint16Array Uint32Array Uint8Array Uint8ClampedArray ArrayBuffer DataView JSON Intl arguments require module console window document Symbol Set Map WeakSet WeakMap Proxy Reflect Promise"
+                          "StopIteration isFinite parseFloat escape decodeURIComponent Float64Array EvalError String Number Uint8Array Array Proxy decodeURI Intl parseInt Boolean Int16Array document Promise Set require ReferenceError Reflect encodeURIComponent Date SyntaxError eval encodeURI window Uint32Array JSON RangeError Int32Array Error URIError WeakMap InternalError TypeError Function unescape Uint16Array isNaN DataView console Uint8ClampedArray Map Int8Array Math arguments ArrayBuffer WeakSet Float32Array Object module RegExp Symbol"
                     },
                     contains: [
                       APOS_STRING_MODE,

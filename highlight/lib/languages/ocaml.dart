@@ -8,9 +8,9 @@ final ocaml = Mode(
     aliases: ["ml"],
     keywords: {
       "keyword":
-          "and as assert asr begin class constraint do done downto else end exception external for fun function functor if in include inherit! inherit initializer land lazy let lor lsl lsr lxor match method!|10 method mod module mutable new object of open! open or private rec sig struct then to try type val! val virtual when while with parser value",
+          "external done inherit! begin while with try or then module exception method!|10 mod sig end val lsl open! downto assert match parser asr if rec function virtual in of land struct constraint new lor functor private include and mutable lsr type lxor as else object lazy when method do fun initializer class let val! to for open value inherit",
       "built_in":
-          "array bool bytes char exn|5 float int int32 int64 list lazy_t|5 nativeint|5 string unit in_channel out_channel ref",
+          "ref out_channel nativeint|5 bytes char in_channel int64 string unit array int32 exn|5 bool int float lazy_t|5 list",
       "literal": "true false"
     },
     illegal: "\\/\\/|>>",

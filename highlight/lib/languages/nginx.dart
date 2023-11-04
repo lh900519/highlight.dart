@@ -84,7 +84,7 @@ final nginx = Mode(refs: {
                 lexemes: "[a-z/_]+",
                 keywords: {
                   "literal":
-                      "on off yes no true false none blocked debug info notice warn error crit select break last permanent redirect kqueue rtsig epoll poll /dev/poll"
+                      "true no permanent break false redirect epoll poll /dev/poll none crit last rtsig debug warn yes blocked kqueue select notice off on info error"
                 },
                 relevance: 0,
                 illegal: "=>",

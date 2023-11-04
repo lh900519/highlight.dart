@@ -72,10 +72,10 @@ final livescript = Mode(
           end: "(?:\\-[0-9A-Za-z\$_]|[0-9A-Za-z\$_])*",
           keywords: {
             "keyword":
-                "in if for while finally new do return else break catch instanceof throw try this switch continue typeof delete debugger case default function var with then unless until loop of by when and or is isnt not it that otherwise from to til fallthrough super case default function var void const let enum export import native list map __hasProp __extends __slice __bind __indexOf",
-            "literal": "true false null undefined yes no on off it that void",
+                "continue switch new by function finally __bind this list function of map delete that with debugger to it in var break __extends instanceof try let native case or export case is var for unless otherwise isnt typeof return do til fallthrough then void __slice loop const and default __hasProp throw not __indexOf until if default while from else enum catch import super when",
+            "literal": "on undefined true void it off yes false null no that",
             "built_in":
-                "npm require console print module global window document"
+                "print console global document require npm module window"
           }),
       [
         '~',
@@ -297,9 +297,9 @@ final livescript = Mode(
         '1',
       ].join(): Mode(className: "subst", begin: "#\\{", end: "}", keywords: {
         "keyword":
-            "in if for while finally new do return else break catch instanceof throw try this switch continue typeof delete debugger case default function var with then unless until loop of by when and or is isnt not it that otherwise from to til fallthrough super case default function var void const let enum export import native list map __hasProp __extends __slice __bind __indexOf",
-        "literal": "true false null undefined yes no on off it that void",
-        "built_in": "npm require console print module global window document"
+            "in isnt delete void by return do list map let this instanceof with else when __extends default unless native __hasProp super otherwise and then if switch export throw for case til debugger is function __slice break it try or continue from typeof var while __bind loop to finally __indexOf default fallthrough case of enum import catch function new var const until not that",
+        "literal": "yes true it that no false off undefined null on void",
+        "built_in": "module print npm require console window global document"
       }, contains: [
         BINARY_NUMBER_MODE,
         Mode(
@@ -661,9 +661,9 @@ final livescript = Mode(
     aliases: ["ls"],
     keywords: {
       "keyword":
-          "in if for while finally new do return else break catch instanceof throw try this switch continue typeof delete debugger case default function var with then unless until loop of by when and or is isnt not it that otherwise from to til fallthrough super case default function var void const let enum export import native list map __hasProp __extends __slice __bind __indexOf",
-      "literal": "true false null undefined yes no on off it that void",
-      "built_in": "npm require console print module global window document"
+          "then in til var if when and fallthrough delete unless isnt map else __slice finally void export or to of let super function list var that switch not __hasProp is with __bind it return break this from until enum try function import for native __indexOf do loop case typeof instanceof while new case catch default const otherwise by default __extends throw debugger continue",
+      "literal": "void off on it no null false that undefined true yes",
+      "built_in": "global window require npm print module console document"
     },
     illegal: "\\/\\*",
     contains: [
@@ -881,11 +881,11 @@ final livescript = Mode(
                 contains: [
                   Mode(begin: "\\(", end: "\\)", keywords: {
                     "keyword":
-                        "in if for while finally new do return else break catch instanceof throw try this switch continue typeof delete debugger case default function var with then unless until loop of by when and or is isnt not it that otherwise from to til fallthrough super case default function var void const let enum export import native list map __hasProp __extends __slice __bind __indexOf",
+                        "__slice unless else to __indexOf function const not export enum return delete debugger while otherwise then and isnt typeof switch break for default loop let case default case of finally __bind native new throw if void in that var from catch with until var __hasProp super when til __extends it try instanceof map continue do import this list is function or by fallthrough",
                     "literal":
-                        "true false null undefined yes no on off it that void",
+                        "false true yes that undefined off it null no void on",
                     "built_in":
-                        "npm require console print module global window document"
+                        "window require print npm document global console module"
                   }, contains: [
                     Mode(self: true),
                     BINARY_NUMBER_MODE,

@@ -9,10 +9,10 @@ final vbscript = Mode(
     case_insensitive: true,
     keywords: {
       "keyword":
-          "call class const dim do loop erase execute executeglobal exit for each next function if then else on error option explicit new private property let get public randomize redim rem select case set stop sub while wend with end to elseif is or xor and not class_initialize class_terminate default preserve in me byval byref step resume goto",
+          "if let next executeglobal select explicit resume option public private exit xor dim step on with byval get set default erase const to then is rem in else me function property sub for class_initialize while stop loop do class preserve call not randomize case wend elseif end each redim goto byref and new or execute error class_terminate",
       "built_in":
-          "lcase month vartype instrrev ubound setlocale getobject rgb getref string weekdayname rnd dateadd monthname now day minute isarray cbool round formatcurrency conversions csng timevalue second year space abs clng timeserial fixs len asc isempty maths dateserial atn timer isobject filter weekday datevalue ccur isdate instr datediff formatdatetime replace isnull right sgn array snumeric log cdbl hex chr lbound msgbox ucase getlocale cos cdate cbyte rtrim join hour oct typename trim strcomp int createobject loadpicture tan formatnumber mid scriptenginebuildversion scriptengine split scriptengineminorversion cint sin datepart ltrim sqr scriptenginemajorversion time derived eval date formatpercent exp inputbox left ascw chrw regexp server response request cstr err",
-      "literal": "true false null nothing empty"
+          "dateserial rgb conversions rnd atn lcase chr monthname right len cdbl ubound replace server isnull formatcurrency scriptenginemajorversion maths fixs isempty derived setlocale round split regexp datediff getlocale timer inputbox array scriptengineminorversion scriptenginebuildversion isobject abs weekday eval ascw dateadd datepart clng month exp csng log formatnumber err response typename sgn formatdatetime hex isdate strcomp msgbox rtrim formatpercent cbool timeserial sin int filter vartype left isarray cint tan cos snumeric instrrev timevalue getobject lbound trim asc instr createobject now request getref day minute ucase second weekdayname cdate string year ccur space sqr cbyte cstr oct loadpicture time join date chrw mid scriptengine hour datevalue ltrim",
+      "literal": "empty false nothing true null"
     },
     illegal: "//",
     contains: [

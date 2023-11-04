@@ -67,8 +67,8 @@ final ada = Mode(
     case_insensitive: true,
     keywords: {
       "keyword":
-          "abort else new return abs elsif not reverse abstract end accept entry select access exception of separate aliased exit or some all others subtype and for out synchronized array function overriding at tagged generic package task begin goto pragma terminate body private then if procedure type case in protected constant interface is raise use declare range delay limited record when delta loop rem while digits renames with do mod requeue xor",
-      "literal": "True False"
+          "abort digits else with generic array delta xor if protected some of out range elsif new body do goto use begin others raise when procedure then private reverse terminate delay access while record declare limited entry package return interface separate abs renames synchronized end is constant mod in and rem overriding loop not accept type requeue all pragma case or abstract aliased select task exception exit subtype at tagged for function",
+      "literal": "False True"
     },
     contains: [
       Mode(

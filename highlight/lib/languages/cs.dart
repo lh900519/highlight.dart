@@ -352,7 +352,7 @@ final cs = Mode(
           end: "}",
           keywords: {
             "keyword":
-                "abstract as base bool break byte case catch char checked const continue decimal default delegate do double enum event explicit extern finally fixed float for foreach goto if implicit in int interface internal is lock long object operator out override params private protected public readonly ref sbyte sealed short sizeof stackalloc static string struct switch this try typeof uint ulong unchecked unsafe ushort using virtual void volatile while add alias ascending async await by descending dynamic equals from get global group into join let nameof on orderby partial remove select set value var when where yield",
+                "volatile goto do await into partial nameof checked this group unsafe operator base object while global add as decimal where catch enum yield public switch explicit void interface override value in out sealed get typeof long var ushort sbyte async short extern params string abstract remove on default fixed if implicit delegate ulong unchecked foreach set byte descending let using sizeof private from try orderby is case char break for const dynamic ref join event equals int by internal virtual alias static double stackalloc struct lock bool uint select ascending when continue finally float protected readonly",
             "literal": "null false true"
           },
           illegal: "\\n",
@@ -786,7 +786,7 @@ final cs = Mode(
         Mode(begin: "\"\""),
         Mode(className: "subst", begin: "{", end: "}", keywords: {
           "keyword":
-              "abstract as base bool break byte case catch char checked const continue decimal default delegate do double enum event explicit extern finally fixed float for foreach goto if implicit in int interface internal is lock long object operator out override params private protected public readonly ref sbyte sealed short sizeof stackalloc static string struct switch this try typeof uint ulong unchecked unsafe ushort using virtual void volatile while add alias ascending async await by descending dynamic equals from get global group into join let nameof on orderby partial remove select set value var when where yield",
+              "interface typeof stackalloc float get join long unsafe struct yield base char sizeof where while by foreach out finally if case override volatile do fixed partial ushort in params decimal into set int bool on continue ref break as ulong public sbyte event alias goto value catch async lock default group byte using static from sealed switch unchecked ascending double string internal var virtual let dynamic equals const uint enum this global delegate remove try explicit is nameof checked add descending for private readonly protected select abstract implicit object await operator void when orderby extern short",
           "literal": "null false true"
         }, contains: [
           Mode(
@@ -1121,8 +1121,8 @@ final cs = Mode(
     aliases: ["csharp", "c#"],
     keywords: {
       "keyword":
-          "abstract as base bool break byte case catch char checked const continue decimal default delegate do double enum event explicit extern finally fixed float for foreach goto if implicit in int interface internal is lock long object operator out override params private protected public readonly ref sbyte sealed short sizeof stackalloc static string struct switch this try typeof uint ulong unchecked unsafe ushort using virtual void volatile while add alias ascending async await by descending dynamic equals from get global group into join let nameof on orderby partial remove select set value var when where yield",
-      "literal": "null false true"
+          "string continue double public sbyte do internal fixed break params if delegate lock override out ref virtual bool enum join decimal default typeof volatile using ascending into const short alias long float dynamic char by sizeof while sealed static from checked base stackalloc event get implicit switch as byte unchecked set await int nameof goto async ushort is abstract value private unsafe try group where when add struct void select foreach case yield explicit var extern protected descending let remove for operator orderby this finally equals readonly interface on uint in partial ulong catch object global",
+      "literal": "true false null"
     },
     illegal: "::",
     contains: [
@@ -1263,8 +1263,8 @@ final cs = Mode(
           excludeEnd: true,
           keywords: {
             "keyword":
-                "abstract as base bool break byte case catch char checked const continue decimal default delegate do double enum event explicit extern finally fixed float for foreach goto if implicit in int interface internal is lock long object operator out override params private protected public readonly ref sbyte sealed short sizeof stackalloc static string struct switch this try typeof uint ulong unchecked unsafe ushort using virtual void volatile while add alias ascending async await by descending dynamic equals from get global group into join let nameof on orderby partial remove select set value var when where yield",
-            "literal": "null false true"
+                "as if case checked operator void using alias on double sealed global group while orderby nameof select delegate sizeof lock in protected ushort byte when let break by base where fixed default dynamic into async ref add explicit is join internal out override continue this virtual short const bool ascending object switch get yield string uint public typeof catch for float descending await try long abstract foreach enum value params sbyte equals struct event char static ulong goto extern stackalloc from private implicit set decimal do volatile finally int interface unsafe partial unchecked readonly var remove",
+            "literal": "true null false"
           },
           contains: [
             Mode(
@@ -1280,8 +1280,8 @@ final cs = Mode(
                 excludeEnd: true,
                 keywords: {
                   "keyword":
-                      "abstract as base bool break byte case catch char checked const continue decimal default delegate do double enum event explicit extern finally fixed float for foreach goto if implicit in int interface internal is lock long object operator out override params private protected public readonly ref sbyte sealed short sizeof stackalloc static string struct switch this try typeof uint ulong unchecked unsafe ushort using virtual void volatile while add alias ascending async await by descending dynamic equals from get global group into join let nameof on orderby partial remove select set value var when where yield",
-                  "literal": "null false true"
+                      "ushort is void nameof decimal short do enum default var bool where protected partial continue select remove sizeof goto foreach sbyte get readonly volatile internal ascending delegate orderby explicit abstract float dynamic event await int in double override on const typeof ref fixed char this object lock unsafe async group implicit when descending byte using from add for as long operator let extern yield catch base if private case finally stackalloc uint public static try equals into join break ulong out while sealed unchecked params interface global string value set alias by struct switch virtual checked",
+                  "literal": "false null true"
                 },
                 relevance: 0,
                 contains: [

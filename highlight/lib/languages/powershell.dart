@@ -823,7 +823,7 @@ final powershell = Mode(
     case_insensitive: true,
     keywords: {
       "keyword":
-          "if else foreach return do while until elseif begin for trap data dynamicparam end break throw param continue finally in switch exit filter try process catch hidden static parameter"
+          "break foreach exit switch parameter throw else param data try filter begin continue static for return do until in dynamicparam catch elseif hidden while end trap process finally if"
     },
     contains: [
       Mode(

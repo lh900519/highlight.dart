@@ -246,5 +246,5 @@ final json = Mode(refs: {
   C_LINE_COMMENT_MODE,
   C_BLOCK_COMMENT_MODE
 ], keywords: {
-  "literal": "true false null"
+  "literal": "null false true"
 }, illegal: "\\S");

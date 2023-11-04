@@ -81,8 +81,8 @@ final ruby = Mode(
         '9',
       ].join(): Mode(className: "params", begin: "\\|", end: "\\|", keywords: {
         "keyword":
-            "and then defined module in return redo if BEGIN retry end for self when next until do begin unless END rescue else break undef not super class case require yield alias while ensure elsif or include attr_reader attr_writer attr_accessor",
-        "literal": "true false nil"
+            "and undef yield begin super until alias next else not ensure class attr_accessor if attr_reader retry unless for while include BEGIN then elsif defined do require module rescue in self break case attr_writer return END end when redo or",
+        "literal": "nil false true"
       }),
       [
         '~',
@@ -814,8 +814,8 @@ final ruby = Mode(
                 endsParent: true,
                 keywords: {
                   "keyword":
-                      "and then defined module in return redo if BEGIN retry end for self when next until do begin unless END rescue else break undef not super class case require yield alias while ensure elsif or include attr_reader attr_writer attr_accessor",
-                  "literal": "true false nil"
+                      "do until when yield module rescue not elsif and self if while begin attr_accessor attr_writer for BEGIN retry case else end super alias unless redo then next break attr_reader defined require return in or END include undef class ensure",
+                  "literal": "nil false true"
                 },
                 contains: [
                   Mode(
@@ -1835,7 +1835,7 @@ final ruby = Mode(
         '1',
       ].join(): Mode(className: "subst", begin: "#\\{", end: "}", keywords: {
         "keyword":
-            "and then defined module in return redo if BEGIN retry end for self when next until do begin unless END rescue else break undef not super class case require yield alias while ensure elsif or include attr_reader attr_writer attr_accessor",
+            "redo return next BEGIN break do and retry ensure unless include require then rescue else super attr_accessor END until module end self for when in begin class while elsif attr_reader yield defined case alias or if undef not attr_writer",
         "literal": "true false nil"
       }, contains: [
         Mode(
@@ -2895,8 +2895,8 @@ final ruby = Mode(
     aliases: ["rb", "gemspec", "podspec", "thor", "irb"],
     keywords: {
       "keyword":
-          "and then defined module in return redo if BEGIN retry end for self when next until do begin unless END rescue else break undef not super class case require yield alias while ensure elsif or include attr_reader attr_writer attr_accessor",
-      "literal": "true false nil"
+          "self and case rescue super or class then until require if ensure retry attr_reader break elsif undef unless when END defined redo do alias for while attr_accessor attr_writer in begin module end yield BEGIN not else include next return",
+      "literal": "nil false true"
     },
     illegal: "\\/\\*",
     contains: [

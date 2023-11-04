@@ -8,10 +8,10 @@ final sml = Mode(
     aliases: ["ml"],
     keywords: {
       "keyword":
-          "abstype and andalso as case datatype do else end eqtype exception fn fun functor handle if in include infix infixr let local nonfix of op open orelse raise rec sharing sig signature struct structure then type val with withtype where while",
+          "if abstype and struct infix do else in orelse raise end let while where sig infixr exception with signature of functor withtype op fun include open rec handle as andalso then fn eqtype structure val type case datatype sharing nonfix local",
       "built_in":
-          "array bool char exn int list option order real ref string substring vector unit word",
-      "literal": "true false NONE SOME LESS EQUAL GREATER nil"
+          "int list string substring ref unit word exn order char real vector bool option array",
+      "literal": "nil SOME NONE false LESS EQUAL true GREATER"
     },
     illegal: "\\/\\/|>>",
     lexemes: "[a-z_]\\w*!?",

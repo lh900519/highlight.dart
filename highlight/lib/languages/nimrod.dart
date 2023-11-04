@@ -7,10 +7,10 @@ final nimrod = Mode(refs: {}, aliases: [
   "nim"
 ], keywords: {
   "keyword":
-      "addr and as asm bind block break case cast const continue converter discard distinct div do elif else end enum except export finally for from generic if import in include interface is isnot iterator let macro method mixin mod nil not notin object of or out proc ptr raise ref return shl shr static template try tuple type using var when while with without xor yield",
-  "literal": "shared guarded stdin stdout stderr result true false",
+      "let yield notin mixin ref try return with or macro method tuple do interface when shr enum var template const in else end shl out object is generic except break as case continue and type without not from distinct nil div isnot static addr bind raise import mod while converter iterator include of block finally elif ptr xor for asm cast export proc discard if using",
+  "literal": "result shared guarded false stderr stdin stdout true",
   "built_in":
-      "int int8 int16 int32 int64 uint uint8 uint16 uint32 uint64 float float32 float64 bool char string cstring pointer expr stmt void auto any range array openarray varargs seq set clong culong cchar cschar cshort cint csize clonglong cfloat cdouble clongdouble cuchar cushort cuint culonglong cstringarray semistatic"
+      "cuint int32 cuchar cstring set void cushort cint pointer range varargs semistatic int clongdouble auto openarray uint8 uint int64 float32 bool cstringarray cchar clong stmt cschar expr uint64 uint32 string uint16 array float cdouble culong csize int8 cfloat cshort float64 culonglong clonglong char seq any int16"
 }, contains: [
   Mode(className: "meta", begin: "{\\.", end: "\\.}", relevance: 10),
   Mode(

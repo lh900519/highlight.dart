@@ -8,10 +8,10 @@ final monkey = Mode(
     case_insensitive: true,
     keywords: {
       "keyword":
-          "public private property continue exit extern new try catch eachin not abstract final select case default const local global field end if then else elseif endif while wend repeat until forever for to step next return module inline throw import",
+          "next try public private abstract local else final throw exit endif global field select property new repeat while extern wend forever until for to elseif eachin continue if inline not then return import default const end case catch step module",
       "built_in":
-          "DebugLog DebugStop Error Print ACos ACosr ASin ASinr ATan ATan2 ATan2r ATanr Abs Abs Ceil Clamp Clamp Cos Cosr Exp Floor Log Max Max Min Min Pow Sgn Sgn Sin Sinr Sqrt Tan Tanr Seed PI HALFPI TWOPI",
-      "literal": "true false null and or shl shr mod"
+          "Sqrt Sin Cosr ACos Tan ATan2r Abs ATanr Error ACosr Ceil ASinr Print ASin Tanr Clamp Seed DebugLog ATan Min Pow ATan2 TWOPI Log Cos DebugStop PI Max Sinr Abs Sgn Clamp HALFPI Min Sgn Exp Floor Max",
+      "literal": "true false null and or shl mod shr"
     },
     illegal: "\\/\\*",
     contains: [

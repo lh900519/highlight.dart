@@ -8,10 +8,10 @@ final vhdl = Mode(
     case_insensitive: true,
     keywords: {
       "keyword":
-          "abs access after alias all and architecture array assert assume assume_guarantee attribute begin block body buffer bus case component configuration constant context cover disconnect downto default else elsif end entity exit fairness file for force function generate generic group guarded if impure in inertial inout is label library linkage literal loop map mod nand new next nor not null of on open or others out package parameter port postponed procedure process property protected pure range record register reject release rem report restrict restrict_guarantee return rol ror select sequence severity shared signal sla sll sra srl strong subtype then to transport type unaffected units until use variable view vmode vprop vunit wait when while with xnor xor",
+          "all or disconnect alias package assume exit linkage nand wait sra select protected variable record after assume_guarantee else srl default report generate subtype units for unaffected vmode signal is open array inertial in attribute next if pure rem type then access postponed component case process body sla assert impure generic loop group begin abs vprop downto force ror and with restrict port shared entity mod release vunit procedure not context use transport sequence out strong elsif while map nor bus file others of restrict_guarantee inout cover end sll label fairness to reject on new architecture configuration view null parameter literal when buffer xor block severity xnor library until range guarded register constant rol return property function",
       "built_in":
-          "boolean bit character integer time delay_length natural positive string bit_vector file_open_kind file_open_status std_logic std_logic_vector unsigned signed boolean_vector integer_vector std_ulogic std_ulogic_vector unresolved_unsigned u_unsigned unresolved_signed u_signed real_vector time_vector",
-      "literal": "false true note warning error failure line text side width"
+          "boolean unresolved_signed bit signed natural u_unsigned real_vector string positive boolean_vector delay_length integer time bit_vector unsigned u_signed std_logic_vector unresolved_unsigned std_ulogic file_open_status time_vector character std_logic std_ulogic_vector integer_vector file_open_kind",
+      "literal": "note true width error line side text warning false failure"
     },
     illegal: "{",
     contains: [

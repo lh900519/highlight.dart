@@ -8,10 +8,10 @@ final go = Mode(
     aliases: ["golang"],
     keywords: {
       "keyword":
-          "break default func interface select case map struct chan else goto package switch const fallthrough if range type continue for import return var go defer bool byte complex64 complex128 float32 float64 int8 int16 int32 int64 string uint8 uint16 uint32 uint64 int uint uintptr rune",
+          "complex64 fallthrough struct select uint32 for package uint16 else func const uint8 return defer type string uintptr go float32 range complex128 chan import default int16 case rune var int8 interface int break uint64 goto byte map uint int32 bool if continue switch int64 float64",
       "literal": "true false iota nil",
       "built_in":
-          "append cap close complex copy imag len make new panic print println real recover delete"
+          "complex println print delete imag make new append copy panic real recover cap close len"
     },
     illegal: "</",
     contains: [
@@ -43,10 +43,10 @@ final go = Mode(
                 end: "\\)",
                 keywords: {
                   "keyword":
-                      "break default func interface select case map struct chan else goto package switch const fallthrough if range type continue for import return var go defer bool byte complex64 complex128 float32 float64 int8 int16 int32 int64 string uint8 uint16 uint32 uint64 int uint uintptr rune",
-                  "literal": "true false iota nil",
+                      "byte func uint64 complex64 float32 break for package uintptr case fallthrough go map int8 interface int16 chan int64 return int uint16 defer uint string select range bool switch struct continue goto complex128 default rune float64 uint32 const import if else var uint8 int32 type",
+                  "literal": "iota false nil true",
                   "built_in":
-                      "append cap close complex copy imag len make new panic print println real recover delete"
+                      "print complex len copy append println make close new recover panic real cap imag delete"
                 },
                 illegal: "[\"']")
           ])

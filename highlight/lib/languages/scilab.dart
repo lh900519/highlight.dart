@@ -38,10 +38,10 @@ final scilab = Mode(
     lexemes: "%?\\w+",
     keywords: {
       "keyword":
-          "abort break case clear catch continue do elseif else endfunction end for function global if pause return resume select try then while",
-      "literal": "%f %F %t %T %pi %eps %inf %nan %e %i %z %s",
+          "if for case pause continue break else global try return elseif catch endfunction resume function select clear then do while end abort",
+      "literal": "%f %F %nan %e %t %T %inf %pi %s %i %z %eps",
       "built_in":
-          "abs and acos asin atan ceil cd chdir clearglobal cosh cos cumprod deff disp error exec execstr exists exp eye gettext floor fprintf fread fsolve imag isdef isempty isinfisnan isvector lasterror length load linspace list listfiles log10 log2 log max min msprintf mclose mopen ones or pathconvert poly printf prod pwd rand real round sinh sin size gsort sprintf sqrt strcat strcmps tring sum system tanh tan type typename warning zeros matrix"
+          "sum matrix mclose warning clearglobal log10 strcat cumprod exec listfiles isvector real sin disp system fread error zeros round mopen imag fprintf or msprintf eye chdir tring lasterror ones cd linspace ceil atan isempty load tanh isinfisnan printf floor min typename exp pwd asin prod list sinh deff exists size sqrt log2 tan acos pathconvert and cos cosh type abs sprintf rand isdef fsolve execstr length strcmps log max gettext poly gsort"
     },
     illegal: "(\"|#|/\\*|\\s+/\\w+)",
     contains: [

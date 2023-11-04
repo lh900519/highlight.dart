@@ -2094,8 +2094,8 @@ final erlang = Mode(
       ].join():
           Mode(beginKeywords: "fun receive if try case", end: "end", keywords: {
         "keyword":
-            "after and andalso|10 band begin bnot bor bsl bzr bxor case catch cond div end fun if let not of orelse|10 query receive rem try when xor",
-        "literal": "false true"
+            "bzr bxor try let after orelse|10 xor and case query of andalso|10 band rem not div bor fun bsl if receive catch end begin when bnot cond",
+        "literal": "true false"
       }, contains: [
         Mode(
             ref: [
@@ -3277,7 +3277,7 @@ final erlang = Mode(
     aliases: ["erl"],
     keywords: {
       "keyword":
-          "after and andalso|10 band begin bnot bor bsl bzr bxor case catch cond div end fun if let not of orelse|10 query receive rem try when xor",
+          "fun bsl when of band not receive query if catch and bor case try end let orelse|10 begin xor after cond bxor andalso|10 div bnot rem bzr",
       "literal": "false true"
     },
     illegal: "(</|\\*=|\\+=|-=|/\\*|\\*/|\\(\\*|\\*\\))",
@@ -3319,8 +3319,8 @@ final erlang = Mode(
           ],
           starts: Mode(end: ";|\\.", keywords: {
             "keyword":
-                "after and andalso|10 band begin bnot bor bsl bzr bxor case catch cond div end fun if let not of orelse|10 query receive rem try when xor",
-            "literal": "false true"
+                "try bor andalso|10 rem orelse|10 and xor of if bzr div not bxor when bnot cond end band bsl case query catch let after fun begin receive",
+            "literal": "true false"
           }, contains: [
             Mode(
                 ref: [

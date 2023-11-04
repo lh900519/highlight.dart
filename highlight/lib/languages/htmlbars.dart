@@ -30,7 +30,7 @@ final htmlbars = Mode(
                 starts: Mode(endsWithParent: true, relevance: 0, keywords: {
                   "keyword": "as",
                   "built_in":
-                      "action collection component concat debugger each each-in else get hash if input link-to loc log mut outlet partial query-params render textarea unbound unless with yield view"
+                      "unbound link-to each-in each query-params mut render debugger with textarea partial concat get if view component collection else log action unless input loc hash yield outlet"
                 }, contains: [
                   QUOTE_STRING_MODE,
                   Mode(
@@ -51,7 +51,7 @@ final htmlbars = Mode(
           keywords: {
             "keyword": "as",
             "built_in":
-                "action collection component concat debugger each each-in else get hash if input link-to loc log mut outlet partial query-params render textarea unbound unless with yield view"
+                "link-to outlet unbound collection partial render yield log else if each-in each action view hash textarea component input concat mut get unless with debugger loc query-params"
           },
           contains: [
             QUOTE_STRING_MODE

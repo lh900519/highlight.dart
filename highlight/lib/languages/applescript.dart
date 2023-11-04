@@ -45,10 +45,10 @@ final applescript = Mode(refs: {
   "osascript"
 ], keywords: {
   "keyword":
-      "about above after against and around as at back before beginning behind below beneath beside between but by considering contain contains continue copy div does eighth else end equal equals error every exit fifth first for fourth from front get given global if ignoring in into is it its last local me middle mod my ninth not of on onto or over prop property put ref reference repeat returning script second set seventh since sixth some tell tenth that the|0 then third through thru timeout times to transaction try until where while whose with without",
-  "literal": "AppleScript false linefeed return pi quote result space tab true",
+      "but the|0 with my through ref ninth mod second whose prop seventh put returning thru then set sixth timeout script not third does property over transaction without of me beginning local or last back on between copy else end below eighth first by every fifth in considering at error beside contains exit and about contain try until around before behind continue given it equal against into global div ignoring above if fourth get after from front for equals as to reference onto middle its while tell beneath is repeat that since some times tenth where",
+  "literal": "true return false quote result tab space AppleScript linefeed pi",
   "built_in":
-      "alias application boolean class constant date file integer list number real record string text activate beep count delay launch log offset read round run say summarize write character characters contents day frontmost id item length month name paragraph paragraphs rest reverse running time version weekday word words year"
+      "boolean characters offset activate number word reverse running day integer text delay list summarize year time class version name string constant run weekday write application file character contents record beep frontmost count length words paragraph date rest item alias real launch paragraphs id say round read log month"
 }, contains: [
   Mode(
       ref: [

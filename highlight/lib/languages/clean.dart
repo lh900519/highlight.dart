@@ -9,8 +9,8 @@ final clean = Mode(refs: {}, aliases: [
   "dcl"
 ], keywords: {
   "keyword":
-      "if let in with where case of class instance otherwise implementation definition system module from import qualified as special code inline foreign export ccall stdcall generic derive infix infixl infixr",
-  "built_in": "Int Real Char Bool",
+      "as case code otherwise implementation if let qualified ccall generic infixl in with of infix special inline module derive infixr instance import export system from class foreign where definition stdcall",
+  "built_in": "Bool Char Real Int",
   "literal": "True False"
 }, contains: [
   C_LINE_COMMENT_MODE,

@@ -9,7 +9,7 @@ final inform7 = Mode(
     case_insensitive: true,
     keywords: {
       "keyword":
-          "thing room person man woman animal container supporter backdrop door scenery open closed locked inside gender is are say understand kind of rule"
+          "door inside thing open of scenery locked room rule understand kind person gender closed supporter animal is backdrop woman container say are man"
     },
     contains: [
       Mode(

@@ -24,10 +24,10 @@ final xl = Mode(
     lexemes: "[a-zA-Z][a-zA-Z0-9_?]*",
     keywords: {
       "keyword":
-          "if then else do while until for loop import with is as where when by data constant integer real text name boolean symbol infix prefix postfix block tree",
-      "literal": "true false nil",
+          "name by import block boolean as postfix if prefix then loop until else tree is infix do symbol with integer real for while constant where data text when",
+      "literal": "nil true false",
       "built_in":
-          "in mod rem and or xor not abs sign floor ceil sqrt sin cos tan asin acos atan exp expm1 log log2 log10 log1p pi at text_length text_range text_find text_replace contains page slide basic_slide title_slide title subtitle fade_in fade_out fade_at clear_color color line_color line_width texture_wrap texture_transform texture scale_?x scale_?y scale_?z? translate_?x translate_?y translate_?z? rotate_?x rotate_?y rotate_?z? rectangle circle ellipse sphere path line_to move_to quad_to curve_to theme background contents locally time mouse_?x mouse_?y mouse_buttons ObjectLoader Animate MovieCredits Slides Filters Shading Materials LensFlare Mapping VLCAudioVideo StereoDecoder PointCloud NetworkAccess RemoteControl RegExp ChromaKey Snowfall NodeJS Speech Charts"
+          "abs translate_?z? rem floor subtitle not title_slide log2 and scale_?z? mouse_?y line_to MovieCredits Slides fade_out sqrt sin exp translate_?x scale_?y quad_to slide rectangle pi sign mod translate_?y time PointCloud scale_?x Animate contains VLCAudioVideo ceil rotate_?y LensFlare StereoDecoder clear_color circle log10 ObjectLoader mouse_?x in log move_to at Materials expm1 rotate_?z? tan page fade_at Shading text_range rotate_?x texture text_find Mapping Speech RemoteControl RegExp ellipse xor ChromaKey fade_in mouse_buttons theme Snowfall contents text_length locally line_color cos text_replace line_width sphere NetworkAccess Charts basic_slide background asin curve_to texture_transform title atan or acos texture_wrap log1p color NodeJS path Filters"
     },
     contains: [
       C_LINE_COMMENT_MODE,
@@ -60,18 +60,18 @@ final xl = Mode(
                 relevance: 0,
                 starts: Mode(endsWithParent: true, keywords: {
                   "keyword":
-                      "if then else do while until for loop import with is as where when by data constant integer real text name boolean symbol infix prefix postfix block tree",
+                      "data real for while if then else prefix symbol postfix infix block by text until loop boolean do with import when is tree where integer as constant name",
                   "literal": "true false nil",
                   "built_in":
-                      "in mod rem and or xor not abs sign floor ceil sqrt sin cos tan asin acos atan exp expm1 log log2 log10 log1p pi at text_length text_range text_find text_replace contains page slide basic_slide title_slide title subtitle fade_in fade_out fade_at clear_color color line_color line_width texture_wrap texture_transform texture scale_?x scale_?y scale_?z? translate_?x translate_?y translate_?z? rotate_?x rotate_?y rotate_?z? rectangle circle ellipse sphere path line_to move_to quad_to curve_to theme background contents locally time mouse_?x mouse_?y mouse_buttons ObjectLoader Animate MovieCredits Slides Filters Shading Materials LensFlare Mapping VLCAudioVideo StereoDecoder PointCloud NetworkAccess RemoteControl RegExp ChromaKey Snowfall NodeJS Speech Charts"
+                      "in background title curve_to mod rotate_?y locally Charts atan page exp fade_in LensFlare fade_at slide rotate_?x ellipse Slides sign not RegExp abs expm1 asin scale_?z? line_width clear_color rem floor title_slide Shading contains scale_?y subtitle and StereoDecoder NodeJS move_to line_color or rotate_?z? path line_to MovieCredits PointCloud text_range texture Materials scale_?x xor translate_?z? texture_transform contents fade_out time translate_?y log sphere NetworkAccess translate_?x ChromaKey log1p VLCAudioVideo Snowfall RemoteControl sqrt quad_to Animate at color theme log10 rectangle text_replace ceil mouse_?x tan Mapping cos text_length basic_slide ObjectLoader sin Filters Speech log2 acos pi text_find mouse_?y circle mouse_buttons texture_wrap"
                 }))
           ]),
       Mode(beginKeywords: "import", end: "\$", keywords: {
         "keyword":
-            "if then else do while until for loop import with is as where when by data constant integer real text name boolean symbol infix prefix postfix block tree",
+            "if then block else real do boolean import by symbol is while postfix tree loop constant integer until name with where for infix prefix data text as when",
         "literal": "true false nil",
         "built_in":
-            "in mod rem and or xor not abs sign floor ceil sqrt sin cos tan asin acos atan exp expm1 log log2 log10 log1p pi at text_length text_range text_find text_replace contains page slide basic_slide title_slide title subtitle fade_in fade_out fade_at clear_color color line_color line_width texture_wrap texture_transform texture scale_?x scale_?y scale_?z? translate_?x translate_?y translate_?z? rotate_?x rotate_?y rotate_?z? rectangle circle ellipse sphere path line_to move_to quad_to curve_to theme background contents locally time mouse_?x mouse_?y mouse_buttons ObjectLoader Animate MovieCredits Slides Filters Shading Materials LensFlare Mapping VLCAudioVideo StereoDecoder PointCloud NetworkAccess RemoteControl RegExp ChromaKey Snowfall NodeJS Speech Charts"
+            "text_find scale_?y Slides scale_?z? and texture_wrap LensFlare sign line_color log1p theme path Filters NetworkAccess rotate_?y ChromaKey time not contents expm1 contains quad_to ObjectLoader mouse_?x circle line_to translate_?y locally tan log move_to abs acos background log10 title page RegExp fade_out Materials Snowfall log2 RemoteControl subtitle floor line_width Charts curve_to ceil NodeJS title_slide VLCAudioVideo atan texture ellipse translate_?x slide exp Animate mouse_?y rotate_?x xor sphere Shading basic_slide rem scale_?x translate_?z? sqrt rectangle fade_in text_length mouse_buttons pi rotate_?z? PointCloud MovieCredits clear_color sin Speech Mapping text_replace mod color in at text_range cos or texture_transform fade_at asin StereoDecoder"
       }, contains: [
         Mode(
             ref: [

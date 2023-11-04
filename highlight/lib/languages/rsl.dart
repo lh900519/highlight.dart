@@ -7,9 +7,9 @@ final rsl = Mode(
     refs: {},
     keywords: {
       "keyword":
-          "float color point normal vector matrix while for if do return else break extern continue",
+          "do for normal point color if break matrix float vector return while extern continue else",
       "built_in":
-          "abs acos ambient area asin atan atmosphere attribute calculatenormal ceil cellnoise clamp comp concat cos degrees depth Deriv diffuse distance Du Dv environment exp faceforward filterstep floor format fresnel incident length lightsource log match max min mod noise normalize ntransform opposite option phong pnoise pow printf ptlined radians random reflect refract renderinfo round setcomp setxcomp setycomp setzcomp shadow sign sin smoothstep specular specularbrdf spline sqrt step tan texture textureinfo trace transform vtransform xcomp ycomp zcomp"
+          "ntransform opposite diffuse asin noise option ambient floor setxcomp filterstep renderinfo acos area log distance normalize min transform incident reflect shadow abs concat phong specular pnoise round setcomp length smoothstep specularbrdf clamp lightsource calculatenormal Deriv xcomp vtransform ycomp format random textureinfo max sin zcomp environment Dv fresnel mod attribute exp spline degrees atan trace texture comp ptlined Du pow tan cellnoise step faceforward sqrt depth sign match printf atmosphere setycomp setzcomp radians ceil refract cos"
     },
     illegal: "</",
     contains: [

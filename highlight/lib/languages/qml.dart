@@ -9,10 +9,10 @@ final qml = Mode(
     case_insensitive: false,
     keywords: {
       "keyword":
-          "in of on if for while finally var new function do return void else break catch instanceof with throw case default try this switch continue typeof delete let yield const export super debugger as async await import",
-      "literal": "true false null undefined NaN Infinity",
+          "on var async if catch finally while do super new try default case export switch this function as of throw return void break typeof delete with debugger for let in const instanceof else import continue await yield",
+      "literal": "true Infinity null undefined false NaN",
       "built_in":
-          "eval isFinite isNaN parseFloat parseInt decodeURI decodeURIComponent encodeURI encodeURIComponent escape unescape Object Function Boolean Error EvalError InternalError RangeError ReferenceError StopIteration SyntaxError TypeError URIError Number Math Date String RegExp Array Float32Array Float64Array Int16Array Int32Array Int8Array Uint16Array Uint32Array Uint8Array Uint8ClampedArray ArrayBuffer DataView JSON Intl arguments require module console window document Symbol Set Map WeakSet WeakMap Proxy Reflect Behavior bool color coordinate date double enumeration font geocircle georectangle geoshape int list matrix4x4 parent point quaternion real rect size string url variant vector2d vector3d vector4dPromise"
+          "enumeration Int16Array escape Uint8ClampedArray Uint8Array DataView Int32Array Uint16Array point decodeURIComponent vector3d Proxy JSON vector4dPromise Float32Array console EvalError StopIteration require parseInt Set real Function Array unescape encodeURI Behavior vector2d matrix4x4 TypeError parseFloat decodeURI rect eval ArrayBuffer document list color Int8Array url georectangle InternalError ReferenceError arguments RegExp WeakMap string WeakSet Map Reflect RangeError variant parent quaternion double isFinite geocircle encodeURIComponent bool Float64Array URIError geoshape Symbol Error Number Date font module isNaN size Object Intl Math String Boolean Uint32Array int window SyntaxError coordinate date"
     },
     contains: [
       Mode(className: "meta", begin: "^\\s*['\"]use (strict|asm)['\"]"),

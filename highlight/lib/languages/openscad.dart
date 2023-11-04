@@ -53,10 +53,10 @@ final openscad = Mode(refs: {
 }, aliases: [
   "scad"
 ], keywords: {
-  "keyword": "function module include use for intersection_for if else \\%",
-  "literal": "false true PI undef",
+  "keyword": "use include \\% module else intersection_for for function if",
+  "literal": "true PI false undef",
   "built_in":
-      "circle square polygon text sphere cube cylinder polyhedron translate rotate scale resize mirror multmatrix color offset hull minkowski union difference intersection abs sign sin cos tan acos asin atan atan2 floor round ceil ln log pow sqrt exp rands min max concat lookup str chr search version version_num norm cross parent_module echo import import_dxf dxf_linear_extrude linear_extrude rotate_extrude surface projection render children dxf_cross dxf_dim let assign"
+      "echo min mirror polyhedron pow color scale hull rands render circle dxf_cross sqrt concat version asin cube exp max cross sin norm minkowski cylinder acos lookup abs difference import square rotate_extrude resize import_dxf polygon version_num multmatrix search atan2 dxf_linear_extrude round translate surface children str linear_extrude log dxf_dim projection parent_module cos text atan tan ceil rotate sphere offset assign floor ln chr intersection union let sign"
 }, contains: [
   C_LINE_COMMENT_MODE,
   C_BLOCK_COMMENT_MODE,

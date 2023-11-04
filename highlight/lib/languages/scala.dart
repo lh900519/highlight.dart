@@ -85,9 +85,9 @@ final scala = Mode(refs: {
     Mode(begin: "\\\${", end: "}")
   ]),
 }, keywords: {
-  "literal": "true false null",
+  "literal": "null false true",
   "keyword":
-      "type yield lazy override def with val var sealed abstract private trait object if forSome for while throw finally protected extends import final return else break new catch super class case package default try this match continue throws implicit"
+      "for lazy case protected continue override object while catch forSome if yield package val def break throws type var sealed with new match this implicit super private else throw try abstract default extends trait finally return final import class"
 }, contains: [
   C_LINE_COMMENT_MODE,
   C_BLOCK_COMMENT_MODE,

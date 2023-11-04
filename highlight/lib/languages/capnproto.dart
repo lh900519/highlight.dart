@@ -7,9 +7,9 @@ final capnproto = Mode(refs: {}, aliases: [
   "capnp"
 ], keywords: {
   "keyword":
-      "struct enum interface union group import using const annotation extends in of on as with from fixed",
+      "group union as annotation interface extends fixed enum on const import of from in struct with using",
   "built_in":
-      "Void Bool Int8 Int16 Int32 Int64 UInt8 UInt16 UInt32 UInt64 Float32 Float64 Text Data AnyPointer AnyStruct Capability List",
+      "List Int8 AnyPointer Float32 Int32 UInt32 Int16 UInt16 Text Data Bool Capability Void UInt64 Int64 UInt8 Float64 AnyStruct",
   "literal": "true false"
 }, contains: [
   QUOTE_STRING_MODE,

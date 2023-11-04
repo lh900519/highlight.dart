@@ -8,10 +8,10 @@ final rust = Mode(
     aliases: ["rs"],
     keywords: {
       "keyword":
-          "abstract as async await become box break const continue crate do dyn else enum extern false final fn for if impl in let loop macro match mod move mut override priv pub ref return self Self static struct super trait true try type typeof unsafe unsized use virtual where while yield",
-      "literal": "true false Some None Ok Err",
+          "await extern true move typeof unsized where match if type else return virtual dyn abstract super pub fn ref struct box macro final yield override do enum async as static false become self try use while mut break continue Self trait loop crate unsafe for in mod const impl let priv",
+      "literal": "None Some false Err true Ok",
       "built_in":
-          "drop i8 i16 i32 i64 i128 isize u8 u16 u32 u64 u128 usize f32 f64 str char bool Box Option Result String Vec Copy Send Sized Sync Drop Fn FnMut FnOnce ToOwned Clone Debug PartialEq PartialOrd Eq Ord AsRef AsMut Into From Default Iterator Extend IntoIterator DoubleEndedIterator ExactSizeIterator SliceConcatExt ToString assert! assert_eq! bitflags! bytes! cfg! col! concat! concat_idents! debug_assert! debug_assert_eq! env! panic! file! format! format_args! include_bin! include_str! line! local_data_key! module_path! option_env! print! println! select! stringify! try! unimplemented! unreachable! vec! write! writeln! macro_rules! assert_ne! debug_assert_ne!"
+          "Extend i32 i8 SliceConcatExt Sized include_bin! Vec bytes! Ord panic! i128 format_args! Fn DoubleEndedIterator select! vec! PartialOrd Option Eq Into file! u128 Iterator isize module_path! assert! u16 bitflags! From concat! Sync FnOnce ToString u32 IntoIterator stringify! writeln! concat_idents! debug_assert_eq! FnMut char Send include_str! f64 drop option_env! bool usize Clone unreachable! u64 println! i16 Result ExactSizeIterator Default Debug format! Box u8 str env! String Drop assert_eq! AsRef i64 AsMut ToOwned Copy PartialEq line! col! cfg! write! debug_assert! try! macro_rules! debug_assert_ne! unimplemented! local_data_key! print! assert_ne! f32"
     },
     lexemes: "[a-zA-Z]\\w*!?",
     illegal: "</",
@@ -86,7 +86,7 @@ final rust = Mode(
           illegal: "[\\w\\d]"),
       Mode(begin: "[a-zA-Z]\\w*::", keywords: {
         "built_in":
-            "drop i8 i16 i32 i64 i128 isize u8 u16 u32 u64 u128 usize f32 f64 str char bool Box Option Result String Vec Copy Send Sized Sync Drop Fn FnMut FnOnce ToOwned Clone Debug PartialEq PartialOrd Eq Ord AsRef AsMut Into From Default Iterator Extend IntoIterator DoubleEndedIterator ExactSizeIterator SliceConcatExt ToString assert! assert_eq! bitflags! bytes! cfg! col! concat! concat_idents! debug_assert! debug_assert_eq! env! panic! file! format! format_args! include_bin! include_str! line! local_data_key! module_path! option_env! print! println! select! stringify! try! unimplemented! unreachable! vec! write! writeln! macro_rules! assert_ne! debug_assert_ne!"
+            "vec! write! u8 i128 Option Into IntoIterator Drop u128 include_bin! PartialEq i64 option_env! Debug u16 env! Vec i32 format_args! ToString Box Ord char Sized PartialOrd Clone local_data_key! String Eq bool FnMut unreachable! AsMut col! include_str! debug_assert_eq! ExactSizeIterator AsRef writeln! stringify! str usize Copy debug_assert_ne! line! FnOnce DoubleEndedIterator bytes! drop assert! i8 isize bitflags! debug_assert! Send Extend file! Sync concat_idents! u32 i16 panic! select! format! unimplemented! f32 From Iterator println! Fn f64 u64 concat! try! cfg! Result print! module_path! assert_ne! Default macro_rules! SliceConcatExt assert_eq! ToOwned"
       }),
       Mode(begin: "->")
     ]);

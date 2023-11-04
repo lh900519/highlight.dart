@@ -7,7 +7,7 @@ final graphql = Mode(refs: {}, aliases: [
   "gql"
 ], keywords: {
   "keyword":
-      "query mutation subscription|10 type interface union scalar fragment|10 enum on ...",
+      "interface query enum scalar mutation type subscription|10 union ... fragment|10 on",
   "literal": "true false null"
 }, contains: [
   HASH_COMMENT_MODE,

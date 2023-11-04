@@ -5,9 +5,9 @@ import '../src/common_modes.dart';
 
 final pony = Mode(refs: {}, keywords: {
   "keyword":
-      "actor addressof and as be break class compile_error compile_intrinsic consume continue delegate digestof do else elseif embed end error for fun if ifdef in interface is isnt lambda let match new not object or primitive recover repeat return struct then trait try type until use var where while with xor",
+      "do is for fun break lambda ifdef struct as continue be let match and elseif xor where repeat in else end embed not delegate return isnt addressof primitive with new class then digestof recover interface use or while compile_intrinsic actor trait try if object var error type until compile_error consume",
   "meta": "iso val tag trn box ref",
-  "literal": "this false true"
+  "literal": "true false this"
 }, contains: [
   Mode(className: "type", begin: "\\b_?[A-Z][\\w]*", relevance: 0),
   Mode(className: "string", begin: "\"\"\"", end: "\"\"\"", relevance: 10),

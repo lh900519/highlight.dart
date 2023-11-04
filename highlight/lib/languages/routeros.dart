@@ -95,9 +95,9 @@ final routeros = Mode(
     case_insensitive: true,
     lexemes: ":?[\\w-]+",
     keywords: {
-      "literal": "true false yes no nothing nil null",
+      "literal": "no true nil nothing false yes null",
       "keyword":
-          "foreach do while for if from to step else on-error and or not in :foreach :do :while :for :if :from :to :step :else :on-error :and :or :not :in :global :local :beep :delay :put :len :typeof :pick :log :time :set :find :environment :terminal :error :execute :parse :resolve :toarray :tobool :toid :toip :toip6 :tonum :tostr :totime"
+          ":from :execute foreach :error :toid :do :len :beep :toip :toip6 :or :log :if :put :environment do while :resolve for else in :to if from step :global :terminal :while :toarray :else :parse :pick :time or :delay :tobool :find and :local :on-error :set to on-error :totime :foreach :for :typeof :and :tostr :not :step not :tonum :in"
     },
     contains: [
       Mode(variants: [

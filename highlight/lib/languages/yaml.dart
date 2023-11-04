@@ -32,7 +32,7 @@ final yaml = Mode(
       HASH_COMMENT_MODE,
       Mode(
           beginKeywords: "true false yes no null",
-          keywords: {"literal": "true false yes no null"}),
+          keywords: {"literal": "true no null false yes"}),
       Mode(
           className: "number",
           begin:

@@ -23,9 +23,9 @@ final autohotkey = Mode(
     aliases: ["ahk"],
     keywords: {
       "keyword":
-          "Break Continue Critical Exit ExitApp Gosub Goto New OnExit Pause return SetBatchLines SetTimer Suspend Thread Throw Until ahk_id ahk_class ahk_pid ahk_exe ahk_group",
-      "literal": "true false NOT AND OR",
-      "built_in": "ComSpec Clipboard ClipboardAll ErrorLevel"
+          "Pause Critical Throw SetBatchLines Gosub ahk_class OnExit Thread ahk_exe ahk_pid Break Suspend New ahk_group Exit Until return SetTimer ahk_id Continue ExitApp Goto",
+      "literal": "AND false NOT true OR",
+      "built_in": "ClipboardAll Clipboard ComSpec ErrorLevel"
     },
     contains: [
       Mode(

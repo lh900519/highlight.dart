@@ -4,9 +4,9 @@ import '../src/mode.dart';
 import '../src/common_modes.dart';
 
 final erlangRepl = Mode(refs: {}, keywords: {
-  "built_in": "spawn spawn_link self",
+  "built_in": "spawn_link spawn self",
   "keyword":
-      "after and andalso|10 band begin bnot bor bsl bsr bxor case catch cond div end fun if let not of or orelse|10 query receive rem try when xor"
+      "and bsr after receive bxor begin query fun andalso|10 let of rem or when xor orelse|10 not bsl band end if cond catch bnot try div bor case"
 }, contains: [
   Mode(className: "meta", begin: "^[0-9]+> ", relevance: 10),
   Mode(className: "comment", begin: "%", end: "\$", contains: [

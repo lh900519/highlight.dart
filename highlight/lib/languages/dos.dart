@@ -46,9 +46,9 @@ final dos = Mode(
     illegal: "\\/\\*",
     keywords: {
       "keyword":
-          "if else goto for in do call exit not exist errorlevel defined equ neq lss leq gtr geq",
+          "neq in for geq goto else not exit equ leq call defined if lss gtr errorlevel do exist",
       "built_in":
-          "prn nul lpt3 lpt2 lpt1 con com4 com3 com2 com1 aux shift cd dir echo setlocal endlocal set pause copy append assoc at attrib break cacls cd chcp chdir chkdsk chkntfs cls cmd color comp compact convert date dir diskcomp diskcopy doskey erase fs find findstr format ftype graftabl help keyb label md mkdir mode more move path pause print popd pushd promt rd recover rem rename replace restore rmdir shiftsort start subst time title tree type ver verify vol ping net ipconfig taskkill xcopy ren del"
+          "com2 endlocal pause com4 rd find comp chkntfs xcopy time erase cd taskkill aux vol com1 con lpt1 break del cd md convert rem diskcomp print keyb append findstr date chcp format fs dir rename rmdir net dir tree color chdir cls shift diskcopy lpt2 attrib doskey ping assoc at chkdsk start set pause promt replace help cmd cacls ren ver echo com3 lpt3 path copy setlocal recover ftype nul prn mode title type restore popd more graftabl pushd label subst ipconfig move shiftsort mkdir verify compact"
     },
     contains: [
       Mode(className: "variable", begin: "%%[^ ]|%[^ ]+?%|![^ ]+?!"),

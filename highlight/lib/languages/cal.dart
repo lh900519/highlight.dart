@@ -262,8 +262,8 @@ final cal = Mode(
     case_insensitive: true,
     keywords: {
       "keyword":
-          "div mod in and or not xor asserterror begin case do downto else end exit for if of repeat then to until while with var",
-      "literal": "false true"
+          "asserterror and xor in if begin var exit else do for of mod repeat with then to div end or until case while not downto",
+      "literal": "true false"
     },
     illegal: "\\/\\*",
     contains: [

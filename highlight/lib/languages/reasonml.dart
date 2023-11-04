@@ -24,10 +24,10 @@ final reasonml = Mode(
           illegal: "\\n",
           keywords: {
             "keyword":
-                "and as asr assert begin class constraint do done downto else end exception externalfor fun function functor if in include inherit initializerland lazy let lor lsl lsr lxor match method mod module mutable new nonrecobject of open or private rec sig struct then to try type val virtual when while with",
+                "with function method let fun new mod nonrecobject rec then downto mutable val done lor lxor asr to sig lazy when externalfor as class begin functor and type assert exception open else private lsr in end struct constraint if inherit match module initializerland virtual include while or of lsl try do",
             "built_in":
-                "array bool bytes char exn|5 float int int32 int64 list lazy_t|5 nativeint|5 ref string unit ",
-            "literal": "true false"
+                "array bool lazy_t|5 int bytes int64 nativeint|5 char float int32 ref  exn|5 list string unit",
+            "literal": "false true"
           },
           contains: [
             QUOTE_STRING_MODE,
@@ -317,10 +317,10 @@ final reasonml = Mode(
           className: "module-access",
           keywords: {
             "keyword":
-                "and as asr assert begin class constraint do done downto else end exception externalfor fun function functor if in include inherit initializerland lazy let lor lsl lsr lxor match method mod module mutable new nonrecobject of open or private rec sig struct then to try type val virtual when while with",
+                "type do fun lxor private lor let val include and asr lsr method if nonrecobject sig initializerland functor to end module constraint in lazy of match struct lsl else exception done downto externalfor assert while rec as open mod inherit then class new function try with virtual or begin mutable when",
             "built_in":
-                "array bool bytes char exn|5 float int int32 int64 list lazy_t|5 nativeint|5 ref string unit ",
-            "literal": "true false"
+                "lazy_t|5 exn|5 unit int32 list array  int bool float bytes string ref nativeint|5 char int64",
+            "literal": "false true"
           },
           returnBegin: true,
           variants: [
@@ -634,9 +634,9 @@ final reasonml = Mode(
         '1',
       ].join(): Mode(className: "function", relevance: 0, keywords: {
         "keyword":
-            "and as asr assert begin class constraint do done downto else end exception externalfor fun function functor if in include inherit initializerland lazy let lor lsl lsr lxor match method mod module mutable new nonrecobject of open or private rec sig struct then to try type val virtual when while with",
+            "let externalfor in exception module lazy done open try when rec to struct lsl as or while else begin assert initializerland sig new of virtual functor then function and method asr fun lor class lsr if match private val do inherit type constraint lxor nonrecobject include end downto mutable mod with",
         "built_in":
-            "array bool bytes char exn|5 float int int32 int64 list lazy_t|5 nativeint|5 ref string unit ",
+            "float array bool ref nativeint|5 bytes unit int64 list int32  char exn|5 lazy_t|5 int string",
         "literal": "true false"
       }, variants: [
         Mode(
@@ -789,10 +789,10 @@ final reasonml = Mode(
     aliases: ["re"],
     keywords: {
       "keyword":
-          "and as asr assert begin class constraint do done downto else end exception externalfor fun function functor if in include inherit initializerland lazy let lor lsl lsr lxor match method mod module mutable new nonrecobject of open or private rec sig struct then to try type val virtual when while with",
+          "include as virtual then private let function lazy downto of asr and fun externalfor mutable lsr constraint sig do nonrecobject open lsl or while exception when functor assert module begin struct method if end match initializerland done to lor try class with val lxor rec inherit type else in mod new",
       "built_in":
-          "array bool bytes char exn|5 float int int32 int64 list lazy_t|5 nativeint|5 ref string unit ",
-      "literal": "true false"
+          "exn|5 bytes list nativeint|5 unit char int lazy_t|5 bool int64 ref int32 array float  string",
+      "literal": "false true"
     },
     illegal: "(:\\-|:=|\\\${|\\+=)",
     contains: [
@@ -1031,10 +1031,10 @@ final reasonml = Mode(
           returnBegin: true,
           keywords: {
             "keyword":
-                "and as asr assert begin class constraint do done downto else end exception externalfor fun function functor if in include inherit initializerland lazy let lor lsl lsr lxor match method mod module mutable new nonrecobject of open or private rec sig struct then to try type val virtual when while with",
+                "begin type include if else and as inherit functor function struct mutable lazy when asr rec do fun lsl open while new virtual nonrecobject assert with of let done then to module val end exception initializerland in private class lsr lor externalfor sig constraint or downto mod lxor try match method",
             "built_in":
-                "array bool bytes char exn|5 float int int32 int64 list lazy_t|5 nativeint|5 ref string unit ",
-            "literal": "true false"
+                "nativeint|5 array int32 bool int string  bytes int64 char unit ref list lazy_t|5 exn|5 float",
+            "literal": "false true"
           },
           end: "=>",
           relevance: 0,
@@ -1106,10 +1106,10 @@ final reasonml = Mode(
           returnBegin: true,
           keywords: {
             "keyword":
-                "and as asr assert begin class constraint do done downto else end exception externalfor fun function functor if in include inherit initializerland lazy let lor lsl lsr lxor match method mod module mutable new nonrecobject of open or private rec sig struct then to try type val virtual when while with",
+                "and as fun in class mod lsr sig private struct lor of when mutable if asr downto while externalfor val else or inherit begin then type do assert lxor functor with open module nonrecobject lazy let initializerland exception try to constraint virtual match done include function end method rec new lsl",
             "built_in":
-                "array bool bytes char exn|5 float int int32 int64 list lazy_t|5 nativeint|5 ref string unit ",
-            "literal": "true false"
+                "float int32 exn|5 ref  string unit lazy_t|5 char bytes bool array list int int64 nativeint|5",
+            "literal": "false true"
           },
           relevance: 0,
           contains: [

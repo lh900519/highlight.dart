@@ -5,9 +5,9 @@ import '../src/common_modes.dart';
 
 final thrift = Mode(refs: {}, keywords: {
   "keyword":
-      "namespace const typedef struct enum service exception void oneway set list map required optional",
-  "built_in": "bool byte i16 i32 i64 double string binary",
-  "literal": "true false"
+      "void service map typedef exception const struct optional oneway namespace set required enum list",
+  "built_in": "bool i32 string binary byte double i64 i16",
+  "literal": "false true"
 }, contains: [
   QUOTE_STRING_MODE,
   NUMBER_MODE,

@@ -8,10 +8,10 @@ final pf = Mode(
     aliases: ["pf.conf"],
     lexemes: "[a-z0-9_<>-]+",
     keywords: {
-      "built_in": "block match pass load anchor|5 antispoof|10 set table",
+      "built_in": "load table pass anchor|5 match block antispoof|10 set",
       "keyword":
-          "in out log quick on rdomain inet inet6 proto from port os to routeallow-opts divert-packet divert-reply divert-to flags group icmp-typeicmp6-type label once probability recieved-on rtable prio queuetos tag tagged user keep fragment for os dropaf-to|10 binat-to|10 nat-to|10 rdr-to|10 bitmask least-stats random round-robinsource-hash static-portdup-to reply-to route-toparent bandwidth default min max qlimitblock-policy debug fingerprints hostid limit loginterface optimizationreassemble ruleset-optimization basic none profile skip state-defaultsstate-policy timeoutconst counters persistno modulate synproxy state|5 floating if-bound no-sync pflow|10 sloppysource-track global rule max-src-nodes max-src-states max-src-connmax-src-conn-rate overload flushscrub|5 max-mss min-ttl no-df|10 random-id",
-      "literal": "all any no-route self urpf-failed egress|5 unknown"
+          "limit quick optimizationreassemble dropaf-to|10 nat-to|10 divert-packet group prio routeallow-opts rdomain divert-reply min-ttl round-robinsource-hash fragment persistno log tagged none floating max-src-connmax-src-conn-rate hostid ruleset-optimization synproxy least-stats counters recieved-on qlimitblock-policy global basic fingerprints inet random-id flushscrub|5 for once binat-to|10 reply-to bitmask state|5 out flags in state-defaultsstate-policy max modulate rule os bandwidth if-bound min overload no-df|10 tag inet6 rtable random to icmp-typeicmp6-type timeoutconst proto rdr-to|10 profile max-mss queuetos static-portdup-to from pflow|10 no-sync skip debug port label on max-src-nodes route-toparent sloppysource-track max-src-states loginterface default os divert-to keep probability user",
+      "literal": "egress|5 urpf-failed self no-route unknown any all"
     },
     contains: [
       HASH_COMMENT_MODE,

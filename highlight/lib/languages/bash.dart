@@ -36,10 +36,10 @@ final bash = Mode(
     aliases: ["sh", "zsh"],
     lexemes: "\\b-?[a-z\\._]+\\b",
     keywords: {
-      "keyword": "if then else elif fi for while in do done case esac function",
+      "keyword": "if then do in else case elif while done esac fi for function",
       "literal": "true false",
       "built_in":
-          "break cd continue eval exec exit export getopts hash pwd readonly return shift test times trap umask unset alias bind builtin caller command declare echo enable help let local logout mapfile printf read readarray source type typeset ulimit unalias set shopt autoload bg bindkey bye cap chdir clone comparguments compcall compctl compdescribe compfiles compgroups compquote comptags comptry compvalues dirs disable disown echotc echoti emulate fc fg float functions getcap getln history integer jobs kill limit log noglob popd print pushd pushln rehash sched setcap setopt stat suspend ttyctl unfunction unhash unlimit unsetopt vared wait whence where which zcompile zformat zftp zle zmodload zparseopts zprof zpty zregexparse zsocket zstyle ztcp",
+          "disown return umask declare source trap alias clone builtin bg chdir readarray fg limit print whence unlimit unalias compgroups test let pwd getln setopt bindkey where pushln sched disable compquote echotc type dirs zftp cap eval help break zpty set float unset log zformat popd ztcp bye getcap echo printf jobs zparseopts wait shopt compdescribe compvalues bind local enable comparguments times zsocket history integer rehash compfiles zregexparse exit emulate ttyctl caller cd getopts functions read noglob suspend continue kill exec shift unfunction readonly vared pushd zprof zmodload command unsetopt zcompile export setcap compctl comptry mapfile hash echoti stat logout typeset fc ulimit zstyle zle comptags unhash which autoload compcall",
       "_": "-ne -eq -lt -gt -f -d -e -s -l -a"
     },
     contains: [

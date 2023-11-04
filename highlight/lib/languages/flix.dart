@@ -4,9 +4,9 @@ import '../src/mode.dart';
 import '../src/common_modes.dart';
 
 final flix = Mode(refs: {}, keywords: {
-  "literal": "true false",
+  "literal": "false true",
   "keyword":
-      "case class def else enum if impl import in lat rel index let match namespace switch type yield with"
+      "else import rel yield case class switch in enum index def let type if lat with match impl namespace"
 }, contains: [
   C_LINE_COMMENT_MODE,
   C_BLOCK_COMMENT_MODE,

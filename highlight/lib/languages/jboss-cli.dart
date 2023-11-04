@@ -9,7 +9,7 @@ final jbossCli = Mode(
     lexemes: "[a-z-]+",
     keywords: {
       "keyword":
-          "alias batch cd clear command connect connection-factory connection-info data-source deploy deployment-info deployment-overlay echo echo-dmr help history if jdbc-driver-info jms-queue|20 jms-topic|20 ls patch pwd quit read-attribute read-operation reload rollout-plan run-batch set shutdown try unalias undeploy unset version xa-data-source",
+          "undeploy cd batch patch help deployment-overlay xa-data-source echo data-source history command jms-topic|20 ls connect connection-info read-attribute reload clear unalias quit alias deployment-info unset jms-queue|20 version read-operation jdbc-driver-info echo-dmr connection-factory try shutdown set rollout-plan deploy if pwd run-batch",
       "literal": "true false"
     },
     contains: [

@@ -4,9 +4,9 @@ import '../src/mode.dart';
 import '../src/common_modes.dart';
 
 final groovy = Mode(refs: {}, keywords: {
-  "literal": "true false null",
+  "literal": "null false true",
   "keyword":
-      "byte short char int long boolean float double void def as in assert trait super this abstract static volatile transient public private protected synchronized final class interface enum if else for while switch case break default continue throw throws try catch finally implements extends new import package return instanceof"
+      "super int default assert for finally class abstract package final catch double this case def char import implements break static volatile short protected in try new float private void instanceof throws long as if else trait throw transient enum while byte public interface switch boolean return extends synchronized continue"
 }, contains: [
   Mode(
       className: "comment",

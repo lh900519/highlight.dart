@@ -7,8 +7,8 @@ final actionscript = Mode(refs: {}, aliases: [
   "as"
 ], keywords: {
   "keyword":
-      "as break case catch class const continue default delete do dynamic each else extends final finally for function get if implements import in include instanceof interface internal is namespace native new override package private protected public return set static super switch this throw try typeof use var void while with",
-  "literal": "true false null undefined"
+      "const if native include each override function package void set try final throw get switch use finally class interface do delete new public while with implements super protected typeof catch namespace var else import in return case static continue this break internal private default for is as dynamic extends instanceof",
+  "literal": "undefined null false true"
 }, contains: [
   APOS_STRING_MODE,
   QUOTE_STRING_MODE,

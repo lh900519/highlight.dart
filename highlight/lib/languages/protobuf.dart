@@ -4,10 +4,10 @@ import '../src/mode.dart';
 import '../src/common_modes.dart';
 
 final protobuf = Mode(refs: {}, keywords: {
-  "keyword": "package import option optional required repeated group oneof",
+  "keyword": "required optional import repeated option group package oneof",
   "built_in":
-      "double float int32 int64 uint32 uint64 sint32 sint64 fixed32 fixed64 sfixed32 sfixed64 bool string bytes",
-  "literal": "true false"
+      "string uint64 sint32 float int64 sint64 fixed32 sfixed64 int32 uint32 sfixed32 fixed64 double bytes bool",
+  "literal": "false true"
 }, contains: [
   QUOTE_STRING_MODE,
   NUMBER_MODE,

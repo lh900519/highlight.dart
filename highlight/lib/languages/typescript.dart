@@ -244,10 +244,10 @@ final typescript = Mode(refs: {
     '1',
   ].join(): Mode(className: "subst", begin: "\\\$\\{", end: "\\}", keywords: {
     "keyword":
-        "in if for while finally var new function do return void else break catch instanceof with throw case default try this switch continue typeof delete let yield const class public private protected get set super static implements enum export import declare type namespace abstract as from extends async await",
-    "literal": "true false null undefined NaN Infinity",
+        "void delete from super abstract extends await typeof public else in enum catch async get set type default as case throw declare let if continue implements for protected class try return break import export yield switch const static namespace instanceof private with new this while var finally function do",
+    "literal": "true false undefined null NaN Infinity",
     "built_in":
-        "eval isFinite isNaN parseFloat parseInt decodeURI decodeURIComponent encodeURI encodeURIComponent escape unescape Object Function Boolean Error EvalError InternalError RangeError ReferenceError StopIteration SyntaxError TypeError URIError Number Math Date String RegExp Array Float32Array Float64Array Int16Array Int32Array Int8Array Uint16Array Uint32Array Uint8Array Uint8ClampedArray ArrayBuffer DataView JSON Intl arguments require module console window document any number boolean string void Promise"
+        "Float32Array decodeURIComponent encodeURI StopIteration Object decodeURI module ArrayBuffer void document window encodeURIComponent require arguments RegExp Int8Array any parseInt JSON Function parseFloat console Float64Array DataView Uint8ClampedArray Int16Array isNaN isFinite Math Uint16Array number Date Error Boolean TypeError Uint32Array unescape InternalError escape Array Promise string boolean Number Int32Array RangeError ReferenceError String eval EvalError URIError Uint8Array SyntaxError Intl"
   }, contains: [
     APOS_STRING_MODE,
     QUOTE_STRING_MODE,
@@ -485,10 +485,10 @@ final typescript = Mode(refs: {
     '3',
   ].join(): Mode(begin: "\\(", end: "\\)", keywords: {
     "keyword":
-        "in if for while finally var new function do return void else break catch instanceof with throw case default try this switch continue typeof delete let yield const class public private protected get set super static implements enum export import declare type namespace abstract as from extends async await",
-    "literal": "true false null undefined NaN Infinity",
+        "yield do namespace function typeof break abstract this while async finally throw const switch default get class enum instanceof delete from with type import return implements static public continue declare catch super void var for await let extends try set protected export private else case if in new as",
+    "literal": "NaN true null false undefined Infinity",
     "built_in":
-        "eval isFinite isNaN parseFloat parseInt decodeURI decodeURIComponent encodeURI encodeURIComponent escape unescape Object Function Boolean Error EvalError InternalError RangeError ReferenceError StopIteration SyntaxError TypeError URIError Number Math Date String RegExp Array Float32Array Float64Array Int16Array Int32Array Int8Array Uint16Array Uint32Array Uint8Array Uint8ClampedArray ArrayBuffer DataView JSON Intl arguments require module console window document any number boolean string void Promise"
+        "TypeError console window isFinite parseFloat isNaN InternalError string RangeError Int32Array encodeURIComponent Intl eval Date boolean Uint32Array encodeURI Uint16Array void arguments SyntaxError Boolean Number document RegExp ArrayBuffer Uint8Array Int8Array Array parseInt number Function Float64Array DataView escape Object decodeURI any JSON Math StopIteration Float32Array String unescape Uint8ClampedArray module Error EvalError ReferenceError Promise require URIError decodeURIComponent Int16Array"
   }, contains: [
     Mode(self: true),
     QUOTE_STRING_MODE,
@@ -563,10 +563,10 @@ final typescript = Mode(refs: {
       excludeEnd: true,
       keywords: {
         "keyword":
-            "in if for while finally var new function do return void else break catch instanceof with throw case default try this switch continue typeof delete let yield const class public private protected get set super static implements enum export import declare type namespace abstract as from extends async await",
-        "literal": "true false null undefined NaN Infinity",
+            "new do declare super extends this typeof const async throw void break yield return protected import await var default abstract export if set finally implements for in public function delete with while private try class from switch case enum get type static as else continue catch instanceof let namespace",
+        "literal": "Infinity null false true NaN undefined",
         "built_in":
-            "eval isFinite isNaN parseFloat parseInt decodeURI decodeURIComponent encodeURI encodeURIComponent escape unescape Object Function Boolean Error EvalError InternalError RangeError ReferenceError StopIteration SyntaxError TypeError URIError Number Math Date String RegExp Array Float32Array Float64Array Int16Array Int32Array Int8Array Uint16Array Uint32Array Uint8Array Uint8ClampedArray ArrayBuffer DataView JSON Intl arguments require module console window document any number boolean string void Promise"
+            "window Float64Array Math Int8Array eval Intl document isFinite TypeError RegExp number Int32Array isNaN parseFloat unescape module encodeURIComponent Uint32Array Boolean JSON escape parseInt EvalError Uint8Array Float32Array require Int16Array any Error Object InternalError ArrayBuffer decodeURI Number StopIteration String encodeURI void string arguments console DataView Array decodeURIComponent RangeError Uint8ClampedArray Function ReferenceError URIError boolean Uint16Array Promise SyntaxError Date"
       },
       contains: [
         C_LINE_COMMENT_MODE,
@@ -650,10 +650,10 @@ final typescript = Mode(refs: {
   "ts"
 ], keywords: {
   "keyword":
-      "in if for while finally var new function do return void else break catch instanceof with throw case default try this switch continue typeof delete let yield const class public private protected get set super static implements enum export import declare type namespace abstract as from extends async await",
-  "literal": "true false null undefined NaN Infinity",
+      "yield new switch while super abstract extends with async typeof case class type const void do export default public enum await import if function in implements catch private for else set this get from var declare delete static protected throw return finally try break instanceof namespace let continue as",
+  "literal": "undefined NaN Infinity true false null",
   "built_in":
-      "eval isFinite isNaN parseFloat parseInt decodeURI decodeURIComponent encodeURI encodeURIComponent escape unescape Object Function Boolean Error EvalError InternalError RangeError ReferenceError StopIteration SyntaxError TypeError URIError Number Math Date String RegExp Array Float32Array Float64Array Int16Array Int32Array Int8Array Uint16Array Uint32Array Uint8Array Uint8ClampedArray ArrayBuffer DataView JSON Intl arguments require module console window document any number boolean string void Promise"
+      "Error Int8Array any require encodeURIComponent RegExp Math Boolean Promise Int32Array TypeError eval Date escape EvalError Float32Array Intl isFinite DataView InternalError parseInt StopIteration Uint8ClampedArray string module SyntaxError String encodeURI Int16Array void Uint16Array Function Float64Array Uint32Array decodeURIComponent Object decodeURI isNaN document arguments ReferenceError Number RangeError JSON ArrayBuffer Uint8Array number parseFloat boolean URIError unescape Array console window"
 }, contains: [
   Mode(className: "meta", begin: "^\\s*['\"]use strict['\"]"),
   APOS_STRING_MODE,
@@ -845,10 +845,10 @@ final typescript = Mode(refs: {
                     excludeEnd: true,
                     keywords: {
                       "keyword":
-                          "in if for while finally var new function do return void else break catch instanceof with throw case default try this switch continue typeof delete let yield const class public private protected get set super static implements enum export import declare type namespace abstract as from extends async await",
-                      "literal": "true false null undefined NaN Infinity",
+                          "in typeof yield try while public finally type new get from class delete const throw static instanceof as function void set declare await implements do extends async return abstract enum for namespace export if switch else case this default with private protected continue break catch super var let import",
+                      "literal": "undefined true Infinity NaN false null",
                       "built_in":
-                          "eval isFinite isNaN parseFloat parseInt decodeURI decodeURIComponent encodeURI encodeURIComponent escape unescape Object Function Boolean Error EvalError InternalError RangeError ReferenceError StopIteration SyntaxError TypeError URIError Number Math Date String RegExp Array Float32Array Float64Array Int16Array Int32Array Int8Array Uint16Array Uint32Array Uint8Array Uint8ClampedArray ArrayBuffer DataView JSON Intl arguments require module console window document any number boolean string void Promise"
+                          "ReferenceError Date Array require EvalError Uint8ClampedArray Math any encodeURI Promise SyntaxError Error StopIteration RangeError void Float64Array TypeError isFinite Int32Array eval RegExp Uint8Array Float32Array Number Function encodeURIComponent parseFloat Uint32Array JSON document module InternalError Object Uint16Array Int8Array String Boolean Int16Array string decodeURI window ArrayBuffer unescape isNaN escape decodeURIComponent DataView boolean number URIError Intl parseInt console arguments"
                     },
                     contains: [
                       Mode(self: true),
@@ -866,10 +866,10 @@ final typescript = Mode(refs: {
       excludeEnd: true,
       keywords: {
         "keyword":
-            "in if for while finally var new function do return void else break catch instanceof with throw case default try this switch continue typeof delete let yield const class public private protected get set super static implements enum export import declare type namespace abstract as from extends async await",
-        "literal": "true false null undefined NaN Infinity",
+            "delete get from void else abstract break extends return case class super for in const async enum static set try yield typeof protected throw catch let this declare import if implements await as private while finally var type new do function with switch default instanceof export public continue namespace",
+        "literal": "false undefined true NaN Infinity null",
         "built_in":
-            "eval isFinite isNaN parseFloat parseInt decodeURI decodeURIComponent encodeURI encodeURIComponent escape unescape Object Function Boolean Error EvalError InternalError RangeError ReferenceError StopIteration SyntaxError TypeError URIError Number Math Date String RegExp Array Float32Array Float64Array Int16Array Int32Array Int8Array Uint16Array Uint32Array Uint8Array Uint8ClampedArray ArrayBuffer DataView JSON Intl arguments require module console window document any number boolean string void Promise"
+            "console EvalError encodeURI Function Uint16Array parseInt eval Number number JSON InternalError window document encodeURIComponent any decodeURI void ReferenceError unescape isNaN isFinite require SyntaxError Boolean Object Promise Math escape Array Float32Array Int32Array Uint32Array RangeError Int8Array Float64Array module Uint8Array string StopIteration Date parseFloat URIError Intl DataView Int16Array Error TypeError arguments String decodeURIComponent boolean Uint8ClampedArray ArrayBuffer RegExp"
       },
       contains: [
         Mode(self: true),

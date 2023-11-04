@@ -35,10 +35,10 @@ final moonscript = Mode(
           contains: [
             Mode(begin: "\\(", end: "\\)", keywords: {
               "keyword":
-                  "if then not for in while do return else elseif break continue switch and or unless when class extends super local import export from using",
-              "literal": "true false nil",
+                  "return or if continue then when break class from not switch unless do and using else super for export elseif extends in local import while",
+              "literal": "nil false true",
               "built_in":
-                  "_G _VERSION assert collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring module next pairs pcall print rawequal rawget rawset require select setfenv setmetatable tonumber tostring type unpack xpcall coroutine debug io math os package string table"
+                  "pcall xpcall coroutine ipairs dofile math io tostring rawequal getfenv loadstring _G rawset _VERSION package setfenv unpack next table module assert pairs os print string rawget require setmetatable collectgarbage load debug type loadfile getmetatable select tonumber error"
             }, contains: [
               Mode(self: true),
               Mode(
@@ -395,10 +395,10 @@ final moonscript = Mode(
           BACKSLASH_ESCAPE,
           Mode(className: "subst", begin: "#\\{", end: "}", keywords: {
             "keyword":
-                "if then not for in while do return else elseif break continue switch and or unless when class extends super local import export from using",
+                "unless using break local then switch continue if not elseif or import from else for super while return export in when do extends and class",
             "literal": "true false nil",
             "built_in":
-                "_G _VERSION assert collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring module next pairs pcall print rawequal rawget rawset require select setfenv setmetatable tonumber tostring type unpack xpcall coroutine debug io math os package string table"
+                "collectgarbage assert debug rawequal load ipairs math rawget loadstring tostring coroutine setfenv os rawset _VERSION tonumber loadfile pairs module error dofile package print table _G next pcall getmetatable type io setmetatable select xpcall getfenv require unpack string"
           }, contains: [
             Mode(
                 ref: [
@@ -594,10 +594,10 @@ final moonscript = Mode(
     aliases: ["moon"],
     keywords: {
       "keyword":
-          "if then not for in while do return else elseif break continue switch and or unless when class extends super local import export from using",
+          "then do class or if elseif using import in extends break and super for not unless while from when return continue local switch export else",
       "literal": "true false nil",
       "built_in":
-          "_G _VERSION assert collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring module next pairs pcall print rawequal rawget rawset require select setfenv setmetatable tonumber tostring type unpack xpcall coroutine debug io math os package string table"
+          "_G getfenv table setfenv loadstring _VERSION pairs getmetatable xpcall rawequal ipairs coroutine select module next tonumber package math require tostring dofile error assert rawget load type setmetatable debug collectgarbage string rawset os loadfile io pcall print unpack"
     },
     illegal: "\\/\\*",
     contains: [

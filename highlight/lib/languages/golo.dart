@@ -5,8 +5,8 @@ import '../src/common_modes.dart';
 
 final golo = Mode(refs: {}, keywords: {
   "keyword":
-      "println readln print import module function local return let var while for foreach times in case when match with break continue augment augmentation each find filter reduce if then else otherwise try catch finally raise throw orIfNull DynamicObject|10 DynamicVariable struct Observable map set vector list array",
-  "literal": "true false null"
+      "otherwise if break readln import for case try module struct filter set return match vector Observable catch println DynamicObject|10 find continue function when array var print list foreach then orIfNull each in augment while map reduce let with finally local raise throw times augmentation DynamicVariable else",
+  "literal": "true null false"
 }, contains: [
   HASH_COMMENT_MODE,
   QUOTE_STRING_MODE,

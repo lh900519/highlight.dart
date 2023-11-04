@@ -449,9 +449,9 @@ final dart = Mode(refs: {
   ]),
 }, keywords: {
   "keyword":
-      "abstract as assert async await break case catch class const continue covariant default deferred do dynamic else enum export extends extension external factory false final finally for Function get hide if implements import in inferface is library mixin new null on operator part rethrow return set show static super switch sync this throw true try typedef var void while with yield",
+      "enum implements set async do dynamic default abstract final super factory finally class yield inferface as continue new static while deferred typedef sync part else Function covariant extension if hide mixin on false assert case this true break external for catch with await export import try library in is const rethrow extends null return get switch operator show var throw void",
   "built_in":
-      "Comparable DateTime Duration Function Iterable Iterator List Map Match Null Object Pattern RegExp Set Stopwatch String StringBuffer StringSink Symbol Type Uri bool double dynamic int num print Element ElementList document querySelector querySelectorAll window"
+      "Comparable DateTime ElementList Null List Stopwatch String Iterable Duration Uri print StringBuffer Match Function querySelector int Pattern RegExp Iterator querySelectorAll Element double document Symbol StringSink dynamic Set Map Type window Object bool num"
 }, contains: [
   Mode(
       ref: [

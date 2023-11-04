@@ -45,9 +45,9 @@ final python = Mode(
           end: "\\}",
           keywords: {
             "keyword":
-                "and elif is global as in if from raise for except finally print import pass return exec else break not with class assert yield try while continue del or def lambda async await nonlocal|10",
-            "built_in": "Ellipsis NotImplemented",
-            "literal": "False None True"
+                "from lambda elif try global nonlocal|10 not del break in for or continue async def exec while finally as class except pass yield is with return if and else raise print assert await import",
+            "built_in": "NotImplemented Ellipsis",
+            "literal": "True None False"
           },
           illegal: "#",
           contains: [
@@ -557,9 +557,9 @@ final python = Mode(
     aliases: ["py", "gyp", "ipython"],
     keywords: {
       "keyword":
-          "and elif is global as in if from raise for except finally print import pass return exec else break not with class assert yield try while continue del or def lambda async await nonlocal|10",
+          "as with elif and raise exec or return pass yield del try await break while if finally for global def except lambda in from is async continue nonlocal|10 else assert import print class not",
       "built_in": "Ellipsis NotImplemented",
-      "literal": "False None True"
+      "literal": "None False True"
     },
     illegal: "(<\\/|->|\\?)|=>",
     contains: [

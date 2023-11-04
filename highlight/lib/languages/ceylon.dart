@@ -491,7 +491,7 @@ final ceylon = Mode(
     },
     keywords: {
       "keyword":
-          "assembly module package import alias class interface object given value assign void function new of extends satisfies abstracts in out return break continue throw assert dynamic if else switch case for while try catch finally then let this outer super is exists nonempty shared abstract formal default actual variable late native deprecatedfinal sealed annotation suppressWarnings small",
+          "try while dynamic catch out assert interface break actual assembly outer else if function new package alias object void small value shared of satisfies super abstracts sealed annotation deprecatedfinal in default exists this return native finally module import for case class variable given late extends continue assign let abstract formal throw is suppressWarnings switch then nonempty",
       "meta": "doc by license see throws tagged"
     },
     illegal: "\\\$[^01]|#[^0-9a-fA-F]",

@@ -9,9 +9,9 @@ final crmsh = Mode(
     case_insensitive: true,
     keywords: {
       "keyword":
-          "params meta operations op rule attributes utilization read write deny defined not_defined in_range date spec in ref reference attribute type xpath version and or lt gt tag lte gte eq ne \\ number string",
+          "utilization reference params attribute type string ref write meta number read xpath version gte in_range ne tag operations \\ lte gt spec op or and defined rule not_defined eq deny lt attributes date in",
       "literal":
-          "Master Started Slave Stopped start promote demote stop monitor true false"
+          "false promote demote start stop Stopped Slave Started monitor Master true"
     },
     contains: [
       HASH_COMMENT_MODE,

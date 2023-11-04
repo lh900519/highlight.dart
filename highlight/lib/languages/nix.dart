@@ -57,10 +57,10 @@ final nix = Mode(refs: {
     '3',
   ].join(): Mode(className: "string", contains: [
     Mode(className: "subst", begin: "\\\$\\{", end: "}", keywords: {
-      "keyword": "rec with let in inherit assert if else then",
-      "literal": "true false or and null",
+      "keyword": "else let if inherit then assert in with rec",
+      "literal": "and or false true null",
       "built_in":
-          "import abort baseNameOf dirOf isNull builtins map removeAttrs throw toString derivation"
+          "throw dirOf removeAttrs isNull map import builtins baseNameOf toString abort derivation"
     }, contains: [
       NUMBER_MODE,
       HASH_COMMENT_MODE,
@@ -123,10 +123,10 @@ final nix = Mode(refs: {
 }, aliases: [
   "nixos"
 ], keywords: {
-  "keyword": "rec with let in inherit assert if else then",
-  "literal": "true false or and null",
+  "keyword": "let assert with inherit in then else rec if",
+  "literal": "or false true null and",
   "built_in":
-      "import abort baseNameOf dirOf isNull builtins map removeAttrs throw toString derivation"
+      "import abort baseNameOf builtins map throw removeAttrs toString derivation dirOf isNull"
 }, contains: [
   NUMBER_MODE,
   HASH_COMMENT_MODE,
